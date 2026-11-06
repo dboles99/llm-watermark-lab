@@ -1,0 +1,29 @@
+services:
+  mock-provider:
+    build: ./mock-server
+    ports:
+      - "127.0.0.1:8099:8099"
+    environment:
+      MOCK_PROVIDER_API_KEY: local-development-only
+      MOCK_SEED: "20260814"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8099/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:17-alpine
+    ports:
+      - "127.0.0.1:54329:5432"
+    environment:
+      POSTGRES_DB: watermark_lab
+      POSTGRES_USER: watermark_lab
+      POSTGRES_PASSWORD: local-development-only
+    volumes:
+      - watermark_lab_pg:/var/lib/postgresql/data
+
+volumes:
+  watermark_lab_pg:
+

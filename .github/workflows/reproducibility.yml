@@ -1,0 +1,49 @@
+name: Reproducibility
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      QT_QPA_PLATFORM: offscreen
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install Python dependencies
+        run: python -m pip install --upgrade pip && python -m pip install -e ".[dev,ocr]" ./crates/watermark-core jsonschema
+      - name: Ruff
+        run: ruff check src tests scripts/validate_repository.py scripts/verify_kgw_author_parity.py
+      - name: Mypy
+        run: mypy src scripts/validate_repository.py scripts/verify_kgw_author_parity.py
+      - name: Pytest
+        run: pytest
+      - name: Validate schemas, manifests, references, and provenance
+        run: python scripts/validate_repository.py --skip-notebooks
+      - name: Compile notebook code cells
+        run: python scripts/validate_repository.py --notebooks-only
+
+  rust:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy
+      - name: Cargo test
+        run: cargo test --workspace --locked
+      - name: Cargo clippy
+        run: cargo clippy --workspace --all-targets --locked -- -D warnings

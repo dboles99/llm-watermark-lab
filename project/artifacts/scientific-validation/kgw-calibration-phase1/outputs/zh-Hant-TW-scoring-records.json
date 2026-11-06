@@ -1,0 +1,3605 @@
+{
+  "records": [
+    {
+      "document_id": "a-cluster-0040-doc-00",
+      "cluster_id": "a-cluster-0040",
+      "token_count": 355,
+      "masked": {
+        "z_score": -0.0837707816583391,
+        "p_value": 0.5333806603998279,
+        "scored_token_count": 190,
+        "ignored_repeated_ngrams": 164,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.552344770738994,
+        "p_value": 0.2903560810945126,
+        "scored_token_count": 354,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0040-doc-01",
+      "cluster_id": "a-cluster-0040",
+      "token_count": 358,
+      "masked": {
+        "z_score": 0.0,
+        "p_value": 0.5,
+        "scored_token_count": 200,
+        "ignored_repeated_ngrams": 157,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.7639154141901761,
+        "p_value": 0.7775411744589539,
+        "scored_token_count": 357,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0040-doc-02",
+      "cluster_id": "a-cluster-0040",
+      "token_count": 377,
+      "masked": {
+        "z_score": -0.35942537872389224,
+        "p_value": 0.6403615540160232,
+        "scored_token_count": 209,
+        "ignored_repeated_ngrams": 167,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.5954913341754137,
+        "p_value": 0.7242424549940633,
+        "scored_token_count": 376,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0040-doc-03",
+      "cluster_id": "a-cluster-0040",
+      "token_count": 347,
+      "masked": {
+        "z_score": -0.2513123449750173,
+        "p_value": 0.5992136842641278,
+        "scored_token_count": 190,
+        "ignored_repeated_ngrams": 156,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.43453959867094055,
+        "p_value": 0.6680516770570708,
+        "scored_token_count": 346,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0040-doc-04",
+      "cluster_id": "a-cluster-0040",
+      "token_count": 339,
+      "masked": {
+        "z_score": -0.12156613477096616,
+        "p_value": 0.5483786824726576,
+        "scored_token_count": 203,
+        "ignored_repeated_ngrams": 135,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.3189560153447881,
+        "p_value": 0.9064080911891479,
+        "scored_token_count": 338,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0041-doc-00",
+      "cluster_id": "a-cluster-0041",
+      "token_count": 333,
+      "masked": {
+        "z_score": 0.0,
+        "p_value": 0.5,
+        "scored_token_count": 176,
+        "ignored_repeated_ngrams": 156,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.12674485010489558,
+        "p_value": 0.5504288265942352,
+        "scored_token_count": 332,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0041-doc-01",
+      "cluster_id": "a-cluster-0041",
+      "token_count": 357,
+      "masked": {
+        "z_score": 0.4479546293064525,
+        "p_value": 0.3270929705236666,
+        "scored_token_count": 201,
+        "ignored_repeated_ngrams": 155,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.36719403681726276,
+        "p_value": 0.6432628564695642,
+        "scored_token_count": 356,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0041-doc-02",
+      "cluster_id": "a-cluster-0041",
+      "token_count": 347,
+      "masked": {
+        "z_score": -0.3481553119113957,
+        "p_value": 0.6361382266652249,
+        "scored_token_count": 176,
+        "ignored_repeated_ngrams": 170,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.8002354802081824,
+        "p_value": 0.9640882681470981,
+        "scored_token_count": 346,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0041-doc-03",
+      "cluster_id": "a-cluster-0041",
+      "token_count": 371,
+      "masked": {
+        "z_score": -0.4502000299885319,
+        "p_value": 0.6737168926701473,
+        "scored_token_count": 199,
+        "ignored_repeated_ngrams": 171,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.8609306980817588,
+        "p_value": 0.968623018005132,
+        "scored_token_count": 370,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0041-doc-04",
+      "cluster_id": "a-cluster-0041",
+      "token_count": 367,
+      "masked": {
+        "z_score": 0.21110016546037455,
+        "p_value": 0.41640455556058414,
+        "scored_token_count": 187,
+        "ignored_repeated_ngrams": 179,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.146786116538568,
+        "p_value": 0.8742649857319238,
+        "scored_token_count": 366,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0042-doc-00",
+      "cluster_id": "a-cluster-0042",
+      "token_count": 360,
+      "masked": {
+        "z_score": -0.04113450348948636,
+        "p_value": 0.5164056659675169,
+        "scored_token_count": 197,
+        "ignored_repeated_ngrams": 162,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.578956253569205,
+        "p_value": 0.7186906542564072,
+        "scored_token_count": 359,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0042-doc-01",
+      "cluster_id": "a-cluster-0042",
+      "token_count": 343,
+      "masked": {
+        "z_score": 0.8065050839582169,
+        "p_value": 0.2099758389031952,
+        "scored_token_count": 185,
+        "ignored_repeated_ngrams": 157,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.9365858115816941,
+        "p_value": 0.174485826574871,
+        "scored_token_count": 342,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0042-doc-02",
+      "cluster_id": "a-cluster-0042",
+      "token_count": 340,
+      "masked": {
+        "z_score": 0.5216720300383333,
+        "p_value": 0.30094935110695187,
+        "scored_token_count": 207,
+        "ignored_repeated_ngrams": 132,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.2822162605150792,
+        "p_value": 0.3888888453948737,
+        "scored_token_count": 339,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0042-doc-03",
+      "cluster_id": "a-cluster-0042",
+      "token_count": 332,
+      "masked": {
+        "z_score": -0.12803687993289598,
+        "p_value": 0.5509401063731295,
+        "scored_token_count": 183,
+        "ignored_repeated_ngrams": 148,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.602946775176608,
+        "p_value": 0.7267279512649669,
+        "scored_token_count": 331,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0042-doc-04",
+      "cluster_id": "a-cluster-0042",
+      "token_count": 335,
+      "masked": {
+        "z_score": -0.497437194810748,
+        "p_value": 0.6905596090805952,
+        "scored_token_count": 163,
+        "ignored_repeated_ngrams": 171,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.06318240236065635,
+        "p_value": 0.47481062883021863,
+        "scored_token_count": 334,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0043-doc-00",
+      "cluster_id": "a-cluster-0043",
+      "token_count": 319,
+      "masked": {
+        "z_score": -0.04339630366027462,
+        "p_value": 0.5173071879104331,
+        "scored_token_count": 177,
+        "ignored_repeated_ngrams": 141,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.32376195411908804,
+        "p_value": 0.37305913110802524,
+        "scored_token_count": 318,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0043-doc-01",
+      "cluster_id": "a-cluster-0043",
+      "token_count": 357,
+      "masked": {
+        "z_score": -0.23904572186687875,
+        "p_value": 0.5944649353330462,
+        "scored_token_count": 210,
+        "ignored_repeated_ngrams": 146,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.24479602454484184,
+        "p_value": 0.4033071861203033,
+        "scored_token_count": 356,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0043-doc-02",
+      "cluster_id": "a-cluster-0043",
+      "token_count": 361,
+      "masked": {
+        "z_score": 0.3721042037676254,
+        "p_value": 0.3549076332828587,
+        "scored_token_count": 195,
+        "ignored_repeated_ngrams": 165,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.48686449556014766,
+        "p_value": 0.6868228194829562,
+        "scored_token_count": 360,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0043-doc-03",
+      "cluster_id": "a-cluster-0043",
+      "token_count": 321,
+      "masked": {
+        "z_score": -0.48007935851918326,
+        "p_value": 0.6844145174813631,
+        "scored_token_count": 175,
+        "ignored_repeated_ngrams": 145,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.12909944487358055,
+        "p_value": 0.4486394806300415,
+        "scored_token_count": 320,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0043-doc-04",
+      "cluster_id": "a-cluster-0043",
+      "token_count": 365,
+      "masked": {
+        "z_score": -0.08124444637023875,
+        "p_value": 0.5323762233858959,
+        "scored_token_count": 202,
+        "ignored_repeated_ngrams": 162,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.8473185457363235,
+        "p_value": 0.8015912038926087,
+        "scored_token_count": 364,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0044-doc-00",
+      "cluster_id": "a-cluster-0044",
+      "token_count": 362,
+      "masked": {
+        "z_score": 0.0409272754535029,
+        "p_value": 0.4836769364962771,
+        "scored_token_count": 199,
+        "ignored_repeated_ngrams": 162,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.6105033824763246,
+        "p_value": 0.9463559961863159,
+        "scored_token_count": 361,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0044-doc-01",
+      "cluster_id": "a-cluster-0044",
+      "token_count": 334,
+      "masked": {
+        "z_score": 0.4376881095324085,
+        "p_value": 0.33080619506274855,
+        "scored_token_count": 174,
+        "ignored_repeated_ngrams": 159,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.41130179815941625,
+        "p_value": 0.6595743743853253,
+        "scored_token_count": 333,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0044-doc-02",
+      "cluster_id": "a-cluster-0044",
+      "token_count": 379,
+      "masked": {
+        "z_score": 0.40622223185119377,
+        "p_value": 0.3422896601887919,
+        "scored_token_count": 202,
+        "ignored_repeated_ngrams": 176,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.1781741612749496,
+        "p_value": 0.4292931006683196,
+        "scored_token_count": 378,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0044-doc-03",
+      "cluster_id": "a-cluster-0044",
+      "token_count": 353,
+      "masked": {
+        "z_score": -0.8421519210665189,
+        "p_value": 0.8001485391088088,
+        "scored_token_count": 188,
+        "ignored_repeated_ngrams": 164,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.70801280154532,
+        "p_value": 0.9966156294265422,
+        "scored_token_count": 352,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0044-doc-04",
+      "cluster_id": "a-cluster-0044",
+      "token_count": 342,
+      "masked": {
+        "z_score": -1.2570787221094177,
+        "p_value": 0.8956374344123389,
+        "scored_token_count": 216,
+        "ignored_repeated_ngrams": 125,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.281876068935481,
+        "p_value": 0.9000569379626526,
+        "scored_token_count": 341,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0045-doc-00",
+      "cluster_id": "a-cluster-0045",
+      "token_count": 357,
+      "masked": {
+        "z_score": 0.24373333911071626,
+        "p_value": 0.40371867550244156,
+        "scored_token_count": 202,
+        "ignored_repeated_ngrams": 154,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.12239801227242092,
+        "p_value": 0.5487080936736567,
+        "scored_token_count": 356,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0045-doc-01",
+      "cluster_id": "a-cluster-0045",
+      "token_count": 348,
+      "masked": {
+        "z_score": -1.256183392633317,
+        "p_value": 0.8954752567428975,
+        "scored_token_count": 203,
+        "ignored_repeated_ngrams": 144,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.7046582502777952,
+        "p_value": 0.9558709096982473,
+        "scored_token_count": 347,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0045-doc-02",
+      "cluster_id": "a-cluster-0045",
+      "token_count": 373,
+      "masked": {
+        "z_score": -0.17213259316477408,
+        "p_value": 0.5683333552317498,
+        "scored_token_count": 180,
+        "ignored_repeated_ngrams": 192,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.3171055481963492,
+        "p_value": 0.9060983762262451,
+        "scored_token_count": 372,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0045-doc-03",
+      "cluster_id": "a-cluster-0045",
+      "token_count": 385,
+      "masked": {
+        "z_score": -0.20567251744743176,
+        "p_value": 0.5814766362574255,
+        "scored_token_count": 197,
+        "ignored_repeated_ngrams": 187,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.2963624321753373,
+        "p_value": 0.9025746756955653,
+        "scored_token_count": 384,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0045-doc-04",
+      "cluster_id": "a-cluster-0045",
+      "token_count": 350,
+      "masked": {
+        "z_score": 0.9271726499455306,
+        "p_value": 0.17691845034236459,
+        "scored_token_count": 171,
+        "ignored_repeated_ngrams": 178,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 1.6997668248423856,
+        "p_value": 0.04458739701384285,
+        "scored_token_count": 349,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0046-doc-00",
+      "cluster_id": "a-cluster-0046",
+      "token_count": 359,
+      "masked": {
+        "z_score": 0.53748384988657,
+        "p_value": 0.2954667188423731,
+        "scored_token_count": 195,
+        "ignored_repeated_ngrams": 163,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.5256954942433834,
+        "p_value": 0.936457141415105,
+        "scored_token_count": 358,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0046-doc-01",
+      "cluster_id": "a-cluster-0046",
+      "token_count": 305,
+      "masked": {
+        "z_score": 0.3651483716701107,
+        "p_value": 0.35750032734404463,
+        "scored_token_count": 160,
+        "ignored_repeated_ngrams": 144,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 1.8543452998910612,
+        "p_value": 0.03184488756831434,
+        "scored_token_count": 304,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0046-doc-02",
+      "cluster_id": "a-cluster-0046",
+      "token_count": 358,
+      "masked": {
+        "z_score": -0.7699188535494523,
+        "p_value": 0.7793259852938368,
+        "scored_token_count": 203,
+        "ignored_repeated_ngrams": 154,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.9861800768944577,
+        "p_value": 0.9764933338799224,
+        "scored_token_count": 357,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0046-doc-03",
+      "cluster_id": "a-cluster-0046",
+      "token_count": 360,
+      "masked": {
+        "z_score": 0.36834547908152615,
+        "p_value": 0.3563078226123791,
+        "scored_token_count": 199,
+        "ignored_repeated_ngrams": 160,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.1523569088340013,
+        "p_value": 0.43945272100163363,
+        "scored_token_count": 359,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0046-doc-04",
+      "cluster_id": "a-cluster-0046",
+      "token_count": 353,
+      "masked": {
+        "z_score": -0.4694685597539519,
+        "p_value": 0.6806326236003616,
+        "scored_token_count": 183,
+        "ignored_repeated_ngrams": 169,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.3692744729379982,
+        "p_value": 0.6440384246539049,
+        "scored_token_count": 352,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0047-doc-00",
+      "cluster_id": "a-cluster-0047",
+      "token_count": 355,
+      "masked": {
+        "z_score": 0.0,
+        "p_value": 0.5,
+        "scored_token_count": 196,
+        "ignored_repeated_ngrams": 158,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.30685820596610774,
+        "p_value": 0.6205243489663878,
+        "scored_token_count": 354,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0047-doc-01",
+      "cluster_id": "a-cluster-0047",
+      "token_count": 334,
+      "masked": {
+        "z_score": -0.24618298195866545,
+        "p_value": 0.5972297056662531,
+        "scored_token_count": 198,
+        "ignored_repeated_ngrams": 135,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.0949157995752499,
+        "p_value": 0.46219085346560534,
+        "scored_token_count": 333,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0047-doc-02",
+      "cluster_id": "a-cluster-0047",
+      "token_count": 324,
+      "masked": {
+        "z_score": 0.22610781582306727,
+        "p_value": 0.41055878292498615,
+        "scored_token_count": 163,
+        "ignored_repeated_ngrams": 160,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.5461186812727502,
+        "p_value": 0.2924921795984642,
+        "scored_token_count": 323,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0047-doc-03",
+      "cluster_id": "a-cluster-0047",
+      "token_count": 370,
+      "masked": {
+        "z_score": -0.16169041669088866,
+        "p_value": 0.5642251741963555,
+        "scored_token_count": 204,
+        "ignored_repeated_ngrams": 165,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.073840159735094,
+        "p_value": 0.9809529209694521,
+        "scored_token_count": 369,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0047-doc-04",
+      "cluster_id": "a-cluster-0047",
+      "token_count": 315,
+      "masked": {
+        "z_score": -0.09304842103984709,
+        "p_value": 0.5370674531880669,
+        "scored_token_count": 154,
+        "ignored_repeated_ngrams": 160,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.06516352124510746,
+        "p_value": 0.4740219026005721,
+        "scored_token_count": 314,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0048-doc-00",
+      "cluster_id": "a-cluster-0048",
+      "token_count": 344,
+      "masked": {
+        "z_score": 0.3368607684266076,
+        "p_value": 0.36811093040956555,
+        "scored_token_count": 188,
+        "ignored_repeated_ngrams": 155,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.09352195295828244,
+        "p_value": 0.5372555449077303,
+        "scored_token_count": 343,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0048-doc-01",
+      "cluster_id": "a-cluster-0048",
+      "token_count": 359,
+      "masked": {
+        "z_score": -0.07893370379638584,
+        "p_value": 0.5314573224434145,
+        "scored_token_count": 214,
+        "ignored_repeated_ngrams": 144,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.3051390988486767,
+        "p_value": 0.6198698931440094,
+        "scored_token_count": 358,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0048-doc-02",
+      "cluster_id": "a-cluster-0048",
+      "token_count": 343,
+      "masked": {
+        "z_score": -0.685506162763685,
+        "p_value": 0.7534877134524358,
+        "scored_token_count": 205,
+        "ignored_repeated_ngrams": 137,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.6858544608470494,
+        "p_value": 0.9540880824733884,
+        "scored_token_count": 342,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0048-doc-03",
+      "cluster_id": "a-cluster-0048",
+      "token_count": 385,
+      "masked": {
+        "z_score": 0.52678658400752,
+        "p_value": 0.2991709002358064,
+        "scored_token_count": 203,
+        "ignored_repeated_ngrams": 181,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.8249579113843055,
+        "p_value": 0.7953022568950406,
+        "scored_token_count": 384,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0048-doc-04",
+      "cluster_id": "a-cluster-0048",
+      "token_count": 351,
+      "masked": {
+        "z_score": -0.599144689515278,
+        "p_value": 0.7254617986438179,
+        "scored_token_count": 182,
+        "ignored_repeated_ngrams": 168,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.2961481396815722,
+        "p_value": 0.9025377737431712,
+        "scored_token_count": 350,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0049-doc-00",
+      "cluster_id": "a-cluster-0049",
+      "token_count": 362,
+      "masked": {
+        "z_score": -1.5961637426866133,
+        "p_value": 0.9447738798836791,
+        "scored_token_count": 199,
+        "ignored_repeated_ngrams": 162,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.582882783216747,
+        "p_value": 0.9951010697356073,
+        "scored_token_count": 361,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0049-doc-01",
+      "cluster_id": "a-cluster-0049",
+      "token_count": 345,
+      "masked": {
+        "z_score": -0.7703288865196432,
+        "p_value": 0.7794475873219446,
+        "scored_token_count": 182,
+        "ignored_repeated_ngrams": 162,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.3696601740023189,
+        "p_value": 0.9146034968921966,
+        "scored_token_count": 344,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0049-doc-02",
+      "cluster_id": "a-cluster-0049",
+      "token_count": 317,
+      "masked": {
+        "z_score": 1.5235764308239508,
+        "p_value": 0.0638072772744778,
+        "scored_token_count": 166,
+        "ignored_repeated_ngrams": 150,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.9093977234462832,
+        "p_value": 0.18157011153589142,
+        "scored_token_count": 316,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0049-doc-03",
+      "cluster_id": "a-cluster-0049",
+      "token_count": 365,
+      "masked": {
+        "z_score": -0.6467616667635546,
+        "p_value": 0.7411068973676728,
+        "scored_token_count": 204,
+        "ignored_repeated_ngrams": 160,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.210455065337605,
+        "p_value": 0.8869478384260892,
+        "scored_token_count": 364,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0049-doc-04",
+      "cluster_id": "a-cluster-0049",
+      "token_count": 361,
+      "masked": {
+        "z_score": 0.32659863237109044,
+        "p_value": 0.37198573903752846,
+        "scored_token_count": 200,
+        "ignored_repeated_ngrams": 160,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.6085806194501846,
+        "p_value": 0.2714012268786866,
+        "scored_token_count": 360,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0050-doc-00",
+      "cluster_id": "a-cluster-0050",
+      "token_count": 345,
+      "masked": {
+        "z_score": -0.5459486832355505,
+        "p_value": 0.7074493937606147,
+        "scored_token_count": 189,
+        "ignored_repeated_ngrams": 155,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.0,
+        "p_value": 0.5,
+        "scored_token_count": 344,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0050-doc-01",
+      "cluster_id": "a-cluster-0050",
+      "token_count": 355,
+      "masked": {
+        "z_score": -0.485071250072666,
+        "p_value": 0.6861870974858204,
+        "scored_token_count": 204,
+        "ignored_repeated_ngrams": 150,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.4115477474440956,
+        "p_value": 0.9209584164158459,
+        "scored_token_count": 354,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0050-doc-02",
+      "cluster_id": "a-cluster-0050",
+      "token_count": 351,
+      "masked": {
+        "z_score": -0.4502000299885319,
+        "p_value": 0.6737168926701473,
+        "scored_token_count": 199,
+        "ignored_repeated_ngrams": 151,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.160246899469287,
+        "p_value": 0.9846232193703628,
+        "scored_token_count": 350,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0050-doc-03",
+      "cluster_id": "a-cluster-0050",
+      "token_count": 355,
+      "masked": {
+        "z_score": 0.629940788348712,
+        "p_value": 0.26436666256071506,
+        "scored_token_count": 189,
+        "ignored_repeated_ngrams": 165,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.42960148835255085,
+        "p_value": 0.6662572228827737,
+        "scored_token_count": 354,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0050-doc-04",
+      "cluster_id": "a-cluster-0050",
+      "token_count": 353,
+      "masked": {
+        "z_score": 0.32025630761017426,
+        "p_value": 0.3743870208532736,
+        "scored_token_count": 208,
+        "ignored_repeated_ngrams": 144,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.24618298195866545,
+        "p_value": 0.40277029433374695,
+        "scored_token_count": 352,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0051-doc-00",
+      "cluster_id": "a-cluster-0051",
+      "token_count": 343,
+      "masked": {
+        "z_score": -0.29242919520104976,
+        "p_value": 0.6150207556256329,
+        "scored_token_count": 191,
+        "ignored_repeated_ngrams": 151,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.8117077033708016,
+        "p_value": 0.7915203134745152,
+        "scored_token_count": 342,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0051-doc-01",
+      "cluster_id": "a-cluster-0051",
+      "token_count": 340,
+      "masked": {
+        "z_score": 0.39735970711951313,
+        "p_value": 0.3455511119224214,
+        "scored_token_count": 171,
+        "ignored_repeated_ngrams": 168,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.03135736227945324,
+        "p_value": 0.4874922721935682,
+        "scored_token_count": 339,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0051-doc-02",
+      "cluster_id": "a-cluster-0051",
+      "token_count": 377,
+      "masked": {
+        "z_score": 1.099524999206747,
+        "p_value": 0.13576956793828515,
+        "scored_token_count": 201,
+        "ignored_repeated_ngrams": 175,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 1.3100809351859102,
+        "p_value": 0.0950842285964264,
+        "scored_token_count": 376,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0051-doc-03",
+      "cluster_id": "a-cluster-0051",
+      "token_count": 346,
+      "masked": {
+        "z_score": -0.23680111138915752,
+        "p_value": 0.5935944553438773,
+        "scored_token_count": 214,
+        "ignored_repeated_ngrams": 131,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.03108349360801046,
+        "p_value": 0.5123985232490947,
+        "scored_token_count": 345,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0051-doc-04",
+      "cluster_id": "a-cluster-0051",
+      "token_count": 363,
+      "masked": {
+        "z_score": -0.20161945963637795,
+        "p_value": 0.5798928844756316,
+        "scored_token_count": 205,
+        "ignored_repeated_ngrams": 157,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.2744839709722493,
+        "p_value": 0.8987540251086779,
+        "scored_token_count": 362,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0052-doc-00",
+      "cluster_id": "a-cluster-0052",
+      "token_count": 334,
+      "masked": {
+        "z_score": 0.7336041484035752,
+        "p_value": 0.23159501594278242,
+        "scored_token_count": 179,
+        "ignored_repeated_ngrams": 154,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 1.1073509950445821,
+        "p_value": 0.13407110225000451,
+        "scored_token_count": 333,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0052-doc-01",
+      "cluster_id": "a-cluster-0052",
+      "token_count": 356,
+      "masked": {
+        "z_score": -0.16012815380508713,
+        "p_value": 0.5636099381030442,
+        "scored_token_count": 208,
+        "ignored_repeated_ngrams": 147,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.03064257065179478,
+        "p_value": 0.487777295802997,
+        "scored_token_count": 355,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0052-doc-02",
+      "cluster_id": "a-cluster-0052",
+      "token_count": 377,
+      "masked": {
+        "z_score": 0.8682431421244593,
+        "p_value": 0.19263062054515834,
+        "scored_token_count": 195,
+        "ignored_repeated_ngrams": 181,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.11909826683508273,
+        "p_value": 0.5474012480816426,
+        "scored_token_count": 376,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0052-doc-03",
+      "cluster_id": "a-cluster-0052",
+      "token_count": 350,
+      "masked": {
+        "z_score": 0.36469840431289846,
+        "p_value": 0.35766827493305187,
+        "scored_token_count": 203,
+        "ignored_repeated_ngrams": 146,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.21633395952539455,
+        "p_value": 0.41436371993599463,
+        "scored_token_count": 349,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0052-doc-04",
+      "cluster_id": "a-cluster-0052",
+      "token_count": 339,
+      "masked": {
+        "z_score": 0.28794152442640447,
+        "p_value": 0.38669575021323177,
+        "scored_token_count": 197,
+        "ignored_repeated_ngrams": 141,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.1884222879063983,
+        "p_value": 0.5747271853119539,
+        "scored_token_count": 338,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0053-doc-00",
+      "cluster_id": "a-cluster-0053",
+      "token_count": 354,
+      "masked": {
+        "z_score": -0.485071250072666,
+        "p_value": 0.6861870974858204,
+        "scored_token_count": 204,
+        "ignored_repeated_ngrams": 149,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.7682313548287526,
+        "p_value": 0.7788251256924673,
+        "scored_token_count": 353,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0053-doc-01",
+      "cluster_id": "a-cluster-0053",
+      "token_count": 360,
+      "masked": {
+        "z_score": 0.47205518296516197,
+        "p_value": 0.3184437003591658,
+        "scored_token_count": 181,
+        "ignored_repeated_ngrams": 178,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.6398990171028055,
+        "p_value": 0.26111912648277236,
+        "scored_token_count": 359,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0053-doc-02",
+      "cluster_id": "a-cluster-0053",
+      "token_count": 333,
+      "masked": {
+        "z_score": -0.29242919520104976,
+        "p_value": 0.6150207556256329,
+        "scored_token_count": 191,
+        "ignored_repeated_ngrams": 141,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.1407036509440602,
+        "p_value": 0.8730033666251079,
+        "scored_token_count": 332,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0053-doc-03",
+      "cluster_id": "a-cluster-0053",
+      "token_count": 378,
+      "masked": {
+        "z_score": 0.659828879073858,
+        "p_value": 0.2546818242830171,
+        "scored_token_count": 196,
+        "ignored_repeated_ngrams": 181,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.02973505167250263,
+        "p_value": 0.5118608214593944,
+        "scored_token_count": 377,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0053-doc-04",
+      "cluster_id": "a-cluster-0053",
+      "token_count": 351,
+      "masked": {
+        "z_score": -0.36650833306891567,
+        "p_value": 0.643007102165309,
+        "scored_token_count": 201,
+        "ignored_repeated_ngrams": 149,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.18516401995451032,
+        "p_value": 0.4265501944895044,
+        "scored_token_count": 350,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0054-doc-00",
+      "cluster_id": "a-cluster-0054",
+      "token_count": 340,
+      "masked": {
+        "z_score": -0.9415130835240083,
+        "p_value": 0.8267790061638765,
+        "scored_token_count": 182,
+        "ignored_repeated_ngrams": 157,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.5992254762521154,
+        "p_value": 0.9451147442344726,
+        "scored_token_count": 339,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0054-doc-01",
+      "cluster_id": "a-cluster-0054",
+      "token_count": 357,
+      "masked": {
+        "z_score": -0.4694685597539519,
+        "p_value": 0.6806326236003616,
+        "scored_token_count": 183,
+        "ignored_repeated_ngrams": 173,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.9791840981793674,
+        "p_value": 0.8362554878534805,
+        "scored_token_count": 356,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0054-doc-02",
+      "cluster_id": "a-cluster-0054",
+      "token_count": 322,
+      "masked": {
+        "z_score": -0.13245323570650439,
+        "p_value": 0.552687095226636,
+        "scored_token_count": 171,
+        "ignored_repeated_ngrams": 150,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.22557184744398817,
+        "p_value": 0.41076721950153205,
+        "scored_token_count": 321,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0054-doc-03",
+      "cluster_id": "a-cluster-0054",
+      "token_count": 372,
+      "masked": {
+        "z_score": 0.20261022461827694,
+        "p_value": 0.4197198488345809,
+        "scored_token_count": 203,
+        "ignored_repeated_ngrams": 168,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.3297198571315994,
+        "p_value": 0.629194175884462,
+        "scored_token_count": 371,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0054-doc-04",
+      "cluster_id": "a-cluster-0054",
+      "token_count": 374,
+      "masked": {
+        "z_score": 0.040128617695256406,
+        "p_value": 0.48399529327496355,
+        "scored_token_count": 207,
+        "ignored_repeated_ngrams": 166,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.3886228291113682,
+        "p_value": 0.6512224117302822,
+        "scored_token_count": 373,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0055-doc-00",
+      "cluster_id": "a-cluster-0055",
+      "token_count": 358,
+      "masked": {
+        "z_score": -0.4457424941602093,
+        "p_value": 0.6721083673843262,
+        "scored_token_count": 203,
+        "ignored_repeated_ngrams": 154,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.1305948130014607,
+        "p_value": 0.8708871641517149,
+        "scored_token_count": 357,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0055-doc-01",
+      "cluster_id": "a-cluster-0055",
+      "token_count": 337,
+      "masked": {
+        "z_score": 0.3927922024247863,
+        "p_value": 0.3472364821601509,
+        "scored_token_count": 175,
+        "ignored_repeated_ngrams": 161,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.3779644730092272,
+        "p_value": 0.6472715069443633,
+        "scored_token_count": 336,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0055-doc-02",
+      "cluster_id": "a-cluster-0055",
+      "token_count": 341,
+      "masked": {
+        "z_score": 0.0,
+        "p_value": 0.5,
+        "scored_token_count": 172,
+        "ignored_repeated_ngrams": 168,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.7514691493021795,
+        "p_value": 0.2261851803386804,
+        "scored_token_count": 340,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0055-doc-03",
+      "cluster_id": "a-cluster-0055",
+      "token_count": 361,
+      "masked": {
+        "z_score": -0.040723148118768406,
+        "p_value": 0.5162416963149762,
+        "scored_token_count": 201,
+        "ignored_repeated_ngrams": 159,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.58230961057048,
+        "p_value": 0.9432105460768113,
+        "scored_token_count": 360,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0055-doc-04",
+      "cluster_id": "a-cluster-0055",
+      "token_count": 370,
+      "masked": {
+        "z_score": 0.1684303842133038,
+        "p_value": 0.4331223531973491,
+        "scored_token_count": 188,
+        "ignored_repeated_ngrams": 181,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.6311687442672026,
+        "p_value": 0.7360349018651172,
+        "scored_token_count": 369,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0056-doc-00",
+      "cluster_id": "a-cluster-0056",
+      "token_count": 363,
+      "masked": {
+        "z_score": -0.4714045207910317,
+        "p_value": 0.6813240558830315,
+        "scored_token_count": 216,
+        "ignored_repeated_ngrams": 146,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.42482799032408314,
+        "p_value": 0.6645189642100345,
+        "scored_token_count": 362,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0056-doc-01",
+      "cluster_id": "a-cluster-0056",
+      "token_count": 345,
+      "masked": {
+        "z_score": 0.3577178850827239,
+        "p_value": 0.3602772236291586,
+        "scored_token_count": 211,
+        "ignored_repeated_ngrams": 133,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.24902912254587614,
+        "p_value": 0.5983308728220751,
+        "scored_token_count": 344,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0056-doc-02",
+      "cluster_id": "a-cluster-0056",
+      "token_count": 354,
+      "masked": {
+        "z_score": -0.8247860988423226,
+        "p_value": 0.7952534799109425,
+        "scored_token_count": 196,
+        "ignored_repeated_ngrams": 157,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.0140653883739534,
+        "p_value": 0.8447242239136948,
+        "scored_token_count": 353,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0056-doc-03",
+      "cluster_id": "a-cluster-0056",
+      "token_count": 347,
+      "masked": {
+        "z_score": -0.90267093384844,
+        "p_value": 0.8166497163943047,
+        "scored_token_count": 198,
+        "ignored_repeated_ngrams": 148,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.9243896512570224,
+        "p_value": 0.9728471196784365,
+        "scored_token_count": 346,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0056-doc-04",
+      "cluster_id": "a-cluster-0056",
+      "token_count": 348,
+      "masked": {
+        "z_score": 1.0105823052798228,
+        "p_value": 0.1561081941716596,
+        "scored_token_count": 188,
+        "ignored_repeated_ngrams": 159,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.5268943682676821,
+        "p_value": 0.29913347247633415,
+        "scored_token_count": 347,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0057-doc-00",
+      "cluster_id": "a-cluster-0057",
+      "token_count": 332,
+      "masked": {
+        "z_score": -0.329914439536929,
+        "p_value": 0.6292676936835115,
+        "scored_token_count": 196,
+        "ignored_repeated_ngrams": 135,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.2856063671889196,
+        "p_value": 0.3875898131014895,
+        "scored_token_count": 331,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0057-doc-01",
+      "cluster_id": "a-cluster-0057",
+      "token_count": 370,
+      "masked": {
+        "z_score": -0.2782250217310075,
+        "p_value": 0.6095801858532088,
+        "scored_token_count": 211,
+        "ignored_repeated_ngrams": 158,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.194062777690752,
+        "p_value": 0.9858845516322402,
+        "scored_token_count": 369,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0057-doc-02",
+      "cluster_id": "a-cluster-0057",
+      "token_count": 367,
+      "masked": {
+        "z_score": -0.6019292654288461,
+        "p_value": 0.7263893886162964,
+        "scored_token_count": 207,
+        "ignored_repeated_ngrams": 159,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.0260717884818766,
+        "p_value": 0.8475711265176826,
+        "scored_token_count": 366,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0057-doc-03",
+      "cluster_id": "a-cluster-0057",
+      "token_count": 338,
+      "masked": {
+        "z_score": 0.7255423196197439,
+        "p_value": 0.23405969617372768,
+        "scored_token_count": 183,
+        "ignored_repeated_ngrams": 154,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.4717540977918292,
+        "p_value": 0.31855115917457166,
+        "scored_token_count": 337,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0057-doc-04",
+      "cluster_id": "a-cluster-0057",
+      "token_count": 369,
+      "masked": {
+        "z_score": -0.6467616667635546,
+        "p_value": 0.7411068973676728,
+        "scored_token_count": 204,
+        "ignored_repeated_ngrams": 164,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.0465595024580763,
+        "p_value": 0.9796493227219409,
+        "scored_token_count": 368,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0058-doc-00",
+      "cluster_id": "a-cluster-0058",
+      "token_count": 378,
+      "masked": {
+        "z_score": -0.6725096063098502,
+        "p_value": 0.7493703366823617,
+        "scored_token_count": 213,
+        "ignored_repeated_ngrams": 164,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.7433762918125657,
+        "p_value": 0.7713730530899038,
+        "scored_token_count": 377,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0058-doc-01",
+      "cluster_id": "a-cluster-0058",
+      "token_count": 349,
+      "masked": {
+        "z_score": -0.20998026278290402,
+        "p_value": 0.583158461177823,
+        "scored_token_count": 189,
+        "ignored_repeated_ngrams": 159,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.3617658132983805,
+        "p_value": 0.9133640981304205,
+        "scored_token_count": 348,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0058-doc-02",
+      "cluster_id": "a-cluster-0058",
+      "token_count": 372,
+      "masked": {
+        "z_score": -1.12089707663561,
+        "p_value": 0.8688341622958213,
+        "scored_token_count": 208,
+        "ignored_repeated_ngrams": 163,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.607784324586286,
+        "p_value": 0.9954434823575613,
+        "scored_token_count": 371,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0058-doc-03",
+      "cluster_id": "a-cluster-0058",
+      "token_count": 356,
+      "masked": {
+        "z_score": -0.8021806287494233,
+        "p_value": 0.7887757599555452,
+        "scored_token_count": 187,
+        "ignored_repeated_ngrams": 168,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.8079116684558918,
+        "p_value": 0.9646898752941238,
+        "scored_token_count": 355,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0058-doc-04",
+      "cluster_id": "a-cluster-0058",
+      "token_count": 351,
+      "masked": {
+        "z_score": 0.17609018126512477,
+        "p_value": 0.43011154730571544,
+        "scored_token_count": 172,
+        "ignored_repeated_ngrams": 178,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.5554920598635309,
+        "p_value": 0.289279069824669,
+        "scored_token_count": 350,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0059-doc-00",
+      "cluster_id": "a-cluster-0059",
+      "token_count": 356,
+      "masked": {
+        "z_score": -1.3714331976235814,
+        "p_value": 0.9148800226854974,
+        "scored_token_count": 193,
+        "ignored_repeated_ngrams": 162,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -3.033614494527683,
+        "p_value": 0.9987917850118716,
+        "scored_token_count": 355,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0059-doc-01",
+      "cluster_id": "a-cluster-0059",
+      "token_count": 349,
+      "masked": {
+        "z_score": 0.7896130531772135,
+        "p_value": 0.21487689136714017,
+        "scored_token_count": 193,
+        "ignored_repeated_ngrams": 155,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.49518756847213835,
+        "p_value": 0.6897661374973081,
+        "scored_token_count": 348,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0059-doc-02",
+      "cluster_id": "a-cluster-0059",
+      "token_count": 352,
+      "masked": {
+        "z_score": -1.0820035616009187,
+        "p_value": 0.8603745273156311,
+        "scored_token_count": 164,
+        "ignored_repeated_ngrams": 187,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.927584368966487,
+        "p_value": 0.9982919681764088,
+        "scored_token_count": 351,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0059-doc-03",
+      "cluster_id": "a-cluster-0059",
+      "token_count": 359,
+      "masked": {
+        "z_score": 0.1649572197684645,
+        "p_value": 0.43448882718229725,
+        "scored_token_count": 196,
+        "ignored_repeated_ngrams": 162,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.42719473838814737,
+        "p_value": 0.6653812533136974,
+        "scored_token_count": 358,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0059-doc-04",
+      "cluster_id": "a-cluster-0059",
+      "token_count": 354,
+      "masked": {
+        "z_score": -0.40622223185119377,
+        "p_value": 0.6577103398112081,
+        "scored_token_count": 202,
+        "ignored_repeated_ngrams": 151,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.751567489009556,
+        "p_value": 0.9600758965123417,
+        "scored_token_count": 353,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0060-doc-00",
+      "cluster_id": "a-cluster-0060",
+      "token_count": 333,
+      "masked": {
+        "z_score": 0.08045179867091297,
+        "p_value": 0.4679389654981802,
+        "scored_token_count": 206,
+        "ignored_repeated_ngrams": 126,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.8872139507342691,
+        "p_value": 0.18748186145634604,
+        "scored_token_count": 332,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0060-doc-01",
+      "cluster_id": "a-cluster-0060",
+      "token_count": 339,
+      "masked": {
+        "z_score": 0.3799802978286742,
+        "p_value": 0.35198002014053,
+        "scored_token_count": 187,
+        "ignored_repeated_ngrams": 151,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.5652668637191949,
+        "p_value": 0.7140538682010409,
+        "scored_token_count": 338,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0060-doc-02",
+      "cluster_id": "a-cluster-0060",
+      "token_count": 347,
+      "masked": {
+        "z_score": 0.36834547908152615,
+        "p_value": 0.3563078226123791,
+        "scored_token_count": 199,
+        "ignored_repeated_ngrams": 147,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.06207708552442008,
+        "p_value": 0.5247492775501562,
+        "scored_token_count": 346,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0060-doc-03",
+      "cluster_id": "a-cluster-0060",
+      "token_count": 364,
+      "masked": {
+        "z_score": 0.08466675133346034,
+        "p_value": 0.46626316480752383,
+        "scored_token_count": 186,
+        "ignored_repeated_ngrams": 177,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.9090909090909092,
+        "p_value": 0.9718748173590166,
+        "scored_token_count": 363,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0060-doc-04",
+      "cluster_id": "a-cluster-0060",
+      "token_count": 330,
+      "masked": {
+        "z_score": -1.4320780207890624,
+        "p_value": 0.9239392530578854,
+        "scored_token_count": 177,
+        "ignored_repeated_ngrams": 152,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.960222615468421,
+        "p_value": 0.9984629159187246,
+        "scored_token_count": 329,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0061-doc-00",
+      "cluster_id": "a-cluster-0061",
+      "token_count": 334,
+      "masked": {
+        "z_score": -0.08290266722896783,
+        "p_value": 0.5330355333989303,
+        "scored_token_count": 194,
+        "ignored_repeated_ngrams": 139,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.22147019900891646,
+        "p_value": 0.41236316911363785,
+        "scored_token_count": 333,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0061-doc-01",
+      "cluster_id": "a-cluster-0061",
+      "token_count": 344,
+      "masked": {
+        "z_score": -0.8512565307587486,
+        "p_value": 0.8026865668784524,
+        "scored_token_count": 184,
+        "ignored_repeated_ngrams": 159,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.8416975766245419,
+        "p_value": 0.8000213724607044,
+        "scored_token_count": 343,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0061-doc-02",
+      "cluster_id": "a-cluster-0061",
+      "token_count": 342,
+      "masked": {
+        "z_score": -0.3481553119113957,
+        "p_value": 0.6361382266652249,
+        "scored_token_count": 176,
+        "ignored_repeated_ngrams": 165,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.781631749350903,
+        "p_value": 0.7827844887611537,
+        "scored_token_count": 341,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0061-doc-03",
+      "cluster_id": "a-cluster-0061",
+      "token_count": 357,
+      "masked": {
+        "z_score": -0.599144689515278,
+        "p_value": 0.7254617986438179,
+        "scored_token_count": 182,
+        "ignored_repeated_ngrams": 174,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.1015821104517882,
+        "p_value": 0.8646783053751487,
+        "scored_token_count": 356,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0061-doc-04",
+      "cluster_id": "a-cluster-0061",
+      "token_count": 375,
+      "masked": {
+        "z_score": -0.7139328934618736,
+        "p_value": 0.7623656618775574,
+        "scored_token_count": 189,
+        "ignored_repeated_ngrams": 185,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.2092013058981688,
+        "p_value": 0.986419678946411,
+        "scored_token_count": 374,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0062-doc-00",
+      "cluster_id": "a-cluster-0062",
+      "token_count": 349,
+      "masked": {
+        "z_score": -0.659828879073858,
+        "p_value": 0.7453181757169829,
+        "scored_token_count": 196,
+        "ignored_repeated_ngrams": 152,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.1141720290623114,
+        "p_value": 0.8673973037042462,
+        "scored_token_count": 348,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0062-doc-01",
+      "cluster_id": "a-cluster-0062",
+      "token_count": 365,
+      "masked": {
+        "z_score": -0.2513123449750173,
+        "p_value": 0.5992136842641278,
+        "scored_token_count": 190,
+        "ignored_repeated_ngrams": 174,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.694637091472647,
+        "p_value": 0.9549278568868258,
+        "scored_token_count": 364,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0062-doc-02",
+      "cluster_id": "a-cluster-0062",
+      "token_count": 370,
+      "masked": {
+        "z_score": 0.4758309514308865,
+        "p_value": 0.317097408664741,
+        "scored_token_count": 212,
+        "ignored_repeated_ngrams": 157,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.31428539564641,
+        "p_value": 0.9896739638203244,
+        "scored_token_count": 369,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0062-doc-03",
+      "cluster_id": "a-cluster-0062",
+      "token_count": 371,
+      "masked": {
+        "z_score": 0.5525359265747009,
+        "p_value": 0.2902906134996391,
+        "scored_token_count": 214,
+        "ignored_repeated_ngrams": 156,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.9004503377814962,
+        "p_value": 0.8160596786101673,
+        "scored_token_count": 370,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0062-doc-04",
+      "cluster_id": "a-cluster-0062",
+      "token_count": 370,
+      "masked": {
+        "z_score": -0.03955938860646178,
+        "p_value": 0.5157777973632113,
+        "scored_token_count": 213,
+        "ignored_repeated_ngrams": 156,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.3306121993780585,
+        "p_value": 0.3704687150962225,
+        "scored_token_count": 369,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0063-doc-00",
+      "cluster_id": "a-cluster-0063",
+      "token_count": 362,
+      "masked": {
+        "z_score": 0.6273550009275092,
+        "p_value": 0.26521327884500134,
+        "scored_token_count": 166,
+        "ignored_repeated_ngrams": 195,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.0303868562731382,
+        "p_value": 0.5121207364045206,
+        "scored_token_count": 361,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0063-doc-01",
+      "cluster_id": "a-cluster-0063",
+      "token_count": 362,
+      "masked": {
+        "z_score": 0.4524795383843499,
+        "p_value": 0.32546177930162273,
+        "scored_token_count": 197,
+        "ignored_repeated_ngrams": 164,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.455802844097073,
+        "p_value": 0.32426587937948204,
+        "scored_token_count": 361,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0063-doc-02",
+      "cluster_id": "a-cluster-0063",
+      "token_count": 313,
+      "masked": {
+        "z_score": 0.3146266024828463,
+        "p_value": 0.3765225891793458,
+        "scored_token_count": 165,
+        "ignored_repeated_ngrams": 147,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.26148818018424536,
+        "p_value": 0.3968580316897869,
+        "scored_token_count": 312,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0063-doc-03",
+      "cluster_id": "a-cluster-0063",
+      "token_count": 368,
+      "masked": {
+        "z_score": -0.04113450348948636,
+        "p_value": 0.5164056659675169,
+        "scored_token_count": 197,
+        "ignored_repeated_ngrams": 170,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.8137108458165315,
+        "p_value": 0.7920946903031822,
+        "scored_token_count": 367,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0063-doc-04",
+      "cluster_id": "a-cluster-0063",
+      "token_count": 349,
+      "masked": {
+        "z_score": 0.3333333333333333,
+        "p_value": 0.36944134018176367,
+        "scored_token_count": 192,
+        "ignored_repeated_ngrams": 156,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.618984460590173,
+        "p_value": 0.7320367020379976,
+        "scored_token_count": 348,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0064-doc-00",
+      "cluster_id": "a-cluster-0064",
+      "token_count": 335,
+      "masked": {
+        "z_score": -0.3606678538669729,
+        "p_value": 0.6408261208260564,
+        "scored_token_count": 164,
+        "ignored_repeated_ngrams": 170,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.06318240236065635,
+        "p_value": 0.47481062883021863,
+        "scored_token_count": 334,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0064-doc-01",
+      "cluster_id": "a-cluster-0064",
+      "token_count": 351,
+      "masked": {
+        "z_score": 0.04315318520021031,
+        "p_value": 0.482789711547725,
+        "scored_token_count": 179,
+        "ignored_repeated_ngrams": 171,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.5554920598635309,
+        "p_value": 0.289279069824669,
+        "scored_token_count": 350,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0064-doc-02",
+      "cluster_id": "a-cluster-0064",
+      "token_count": 342,
+      "masked": {
+        "z_score": 0.5052911526399114,
+        "p_value": 0.30667717797737337,
+        "scored_token_count": 188,
+        "ignored_repeated_ngrams": 153,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.5940401295066863,
+        "p_value": 0.2762426365232876,
+        "scored_token_count": 341,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0064-doc-03",
+      "cluster_id": "a-cluster-0064",
+      "token_count": 358,
+      "masked": {
+        "z_score": 0.22075539284417398,
+        "p_value": 0.4126414490075876,
+        "scored_token_count": 171,
+        "ignored_repeated_ngrams": 186,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.1527830828380352,
+        "p_value": 0.5607153304816601,
+        "scored_token_count": 357,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0064-doc-04",
+      "cluster_id": "a-cluster-0064",
+      "token_count": 351,
+      "masked": {
+        "z_score": -0.08206099398622181,
+        "p_value": 0.5327008946202538,
+        "scored_token_count": 198,
+        "ignored_repeated_ngrams": 152,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.4320493798938574,
+        "p_value": 0.6671472378892103,
+        "scored_token_count": 350,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0065-doc-00",
+      "cluster_id": "a-cluster-0065",
+      "token_count": 355,
+      "masked": {
+        "z_score": -0.5961964751378732,
+        "p_value": 0.7244780099403132,
+        "scored_token_count": 211,
+        "ignored_repeated_ngrams": 143,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.148007441762754,
+        "p_value": 0.9841434178568157,
+        "scored_token_count": 354,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0065-doc-01",
+      "cluster_id": "a-cluster-0065",
+      "token_count": 345,
+      "masked": {
+        "z_score": 0.4571443992078605,
+        "p_value": 0.3237836296579809,
+        "scored_token_count": 193,
+        "ignored_repeated_ngrams": 151,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.8716019289105665,
+        "p_value": 0.19171278901470884,
+        "scored_token_count": 344,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0065-doc-02",
+      "cluster_id": "a-cluster-0065",
+      "token_count": 362,
+      "masked": {
+        "z_score": 0.48989794855663565,
+        "p_value": 0.312103057383203,
+        "scored_token_count": 200,
+        "ignored_repeated_ngrams": 161,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.6381239817359022,
+        "p_value": 0.7383035116818615,
+        "scored_token_count": 361,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0065-doc-03",
+      "cluster_id": "a-cluster-0065",
+      "token_count": 347,
+      "masked": {
+        "z_score": -0.514272051884003,
+        "p_value": 0.6964691006122448,
+        "scored_token_count": 213,
+        "ignored_repeated_ngrams": 133,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.1794646249639815,
+        "p_value": 0.880893392563439,
+        "scored_token_count": 346,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0065-doc-04",
+      "cluster_id": "a-cluster-0065",
+      "token_count": 360,
+      "masked": {
+        "z_score": 1.7339273528728503,
+        "p_value": 0.04146548694289274,
+        "scored_token_count": 205,
+        "ignored_repeated_ngrams": 154,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.8836700712372076,
+        "p_value": 0.18843717049187536,
+        "scored_token_count": 359,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0066-doc-00",
+      "cluster_id": "a-cluster-0066",
+      "token_count": 362,
+      "masked": {
+        "z_score": -0.40622223185119377,
+        "p_value": 0.6577103398112081,
+        "scored_token_count": 202,
+        "ignored_repeated_ngrams": 159,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.6381239817359022,
+        "p_value": 0.7383035116818615,
+        "scored_token_count": 361,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0066-doc-01",
+      "cluster_id": "a-cluster-0066",
+      "token_count": 335,
+      "masked": {
+        "z_score": -0.0837707816583391,
+        "p_value": 0.5333806603998279,
+        "scored_token_count": 190,
+        "ignored_repeated_ngrams": 144,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.44227681652459444,
+        "p_value": 0.6708555474507607,
+        "scored_token_count": 334,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0066-doc-02",
+      "cluster_id": "a-cluster-0066",
+      "token_count": 353,
+      "masked": {
+        "z_score": -0.43721074843444035,
+        "p_value": 0.6690207422849525,
+        "scored_token_count": 211,
+        "ignored_repeated_ngrams": 141,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.4923659639173309,
+        "p_value": 0.6887696720532728,
+        "scored_token_count": 352,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0066-doc-03",
+      "cluster_id": "a-cluster-0066",
+      "token_count": 374,
+      "masked": {
+        "z_score": -0.28941438070815306,
+        "p_value": 0.6138678542770268,
+        "scored_token_count": 195,
+        "ignored_repeated_ngrams": 178,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.6277753393337486,
+        "p_value": 0.7349244383893989,
+        "scored_token_count": 373,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0066-doc-04",
+      "cluster_id": "a-cluster-0066",
+      "token_count": 365,
+      "masked": {
+        "z_score": 0.6821865008193588,
+        "p_value": 0.24756051470884188,
+        "scored_token_count": 207,
+        "ignored_repeated_ngrams": 157,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.48418202613504197,
+        "p_value": 0.6858716541531886,
+        "scored_token_count": 364,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0067-doc-00",
+      "cluster_id": "a-cluster-0067",
+      "token_count": 369,
+      "masked": {
+        "z_score": 0.12097167578182677,
+        "p_value": 0.4518567349272783,
+        "scored_token_count": 205,
+        "ignored_repeated_ngrams": 163,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.3242443839434612,
+        "p_value": 0.9072890526470201,
+        "scored_token_count": 368,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0067-doc-01",
+      "cluster_id": "a-cluster-0067",
+      "token_count": 366,
+      "masked": {
+        "z_score": 1.1751393027860062,
+        "p_value": 0.11996949441527588,
+        "scored_token_count": 203,
+        "ignored_repeated_ngrams": 162,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.6950575679978244,
+        "p_value": 0.24350961250678577,
+        "scored_token_count": 365,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0067-doc-02",
+      "cluster_id": "a-cluster-0067",
+      "token_count": 367,
+      "masked": {
+        "z_score": 0.04052204492365539,
+        "p_value": 0.4838384660830408,
+        "scored_token_count": 203,
+        "ignored_repeated_ngrams": 163,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.8710720848787163,
+        "p_value": 0.9693324548925122,
+        "scored_token_count": 366,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0067-doc-03",
+      "cluster_id": "a-cluster-0067",
+      "token_count": 344,
+      "masked": {
+        "z_score": 0.6170175523422953,
+        "p_value": 0.26861157421168913,
+        "scored_token_count": 197,
+        "ignored_repeated_ngrams": 146,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.1558699215971374,
+        "p_value": 0.4380677772880415,
+        "scored_token_count": 343,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0067-doc-04",
+      "cluster_id": "a-cluster-0067",
+      "token_count": 338,
+      "masked": {
+        "z_score": -1.0389645436542283,
+        "p_value": 0.8505893867457096,
+        "scored_token_count": 193,
+        "ignored_repeated_ngrams": 144,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.0378590151420244,
+        "p_value": 0.8503321515691938,
+        "scored_token_count": 337,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0068-doc-00",
+      "cluster_id": "a-cluster-0068",
+      "token_count": 369,
+      "masked": {
+        "z_score": -0.8551861104941366,
+        "p_value": 0.8037759378762122,
+        "scored_token_count": 201,
+        "ignored_repeated_ngrams": 167,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.9630868246861536,
+        "p_value": 0.8322480234635028,
+        "scored_token_count": 368,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0068-doc-01",
+      "cluster_id": "a-cluster-0068",
+      "token_count": 338,
+      "masked": {
+        "z_score": 0.0,
+        "p_value": 0.5,
+        "scored_token_count": 184,
+        "ignored_repeated_ngrams": 153,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.15725136593060973,
+        "p_value": 0.5624766261689907,
+        "scored_token_count": 337,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0068-doc-02",
+      "cluster_id": "a-cluster-0068",
+      "token_count": 355,
+      "masked": {
+        "z_score": -0.25677629550654774,
+        "p_value": 0.6013242649443178,
+        "scored_token_count": 182,
+        "ignored_repeated_ngrams": 172,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.5342910298305388,
+        "p_value": 0.9375209642349859,
+        "scored_token_count": 354,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0068-doc-03",
+      "cluster_id": "a-cluster-0068",
+      "token_count": 352,
+      "masked": {
+        "z_score": 0.04052204492365539,
+        "p_value": 0.4838384660830408,
+        "scored_token_count": 203,
+        "ignored_repeated_ngrams": 148,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.2018504251546631,
+        "p_value": 0.8852892576851552,
+        "scored_token_count": 351,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0068-doc-04",
+      "cluster_id": "a-cluster-0068",
+      "token_count": 349,
+      "masked": {
+        "z_score": 1.044389982860892,
+        "p_value": 0.14815249813147113,
+        "scored_token_count": 191,
+        "ignored_repeated_ngrams": 157,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 1.3617658132983805,
+        "p_value": 0.08663590186957953,
+        "scored_token_count": 348,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0069-doc-00",
+      "cluster_id": "a-cluster-0069",
+      "token_count": 341,
+      "masked": {
+        "z_score": 0.5863954716083737,
+        "p_value": 0.27880489335221664,
+        "scored_token_count": 190,
+        "ignored_repeated_ngrams": 150,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 1.502938298604359,
+        "p_value": 0.06642747786552688,
+        "scored_token_count": 340,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0069-doc-01",
+      "cluster_id": "a-cluster-0069",
+      "token_count": 336,
+      "masked": {
+        "z_score": -0.3606678538669729,
+        "p_value": 0.6408261208260564,
+        "scored_token_count": 164,
+        "ignored_repeated_ngrams": 171,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.4825687000098027,
+        "p_value": 0.9309054808599831,
+        "scored_token_count": 335,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0069-doc-02",
+      "cluster_id": "a-cluster-0069",
+      "token_count": 343,
+      "masked": {
+        "z_score": -0.5222329678670935,
+        "p_value": 0.699245932779705,
+        "scored_token_count": 176,
+        "ignored_repeated_ngrams": 166,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.5619514869490164,
+        "p_value": 0.7129254636014191,
+        "scored_token_count": 342,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0069-doc-03",
+      "cluster_id": "a-cluster-0069",
+      "token_count": 346,
+      "masked": {
+        "z_score": -0.04032389192727559,
+        "p_value": 0.5160825468682789,
+        "scored_token_count": 205,
+        "ignored_repeated_ngrams": 140,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.40408541690413596,
+        "p_value": 0.6569250458238122,
+        "scored_token_count": 345,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0069-doc-04",
+      "cluster_id": "a-cluster-0069",
+      "token_count": 336,
+      "masked": {
+        "z_score": -0.21457053771143725,
+        "p_value": 0.5849489168003739,
+        "scored_token_count": 181,
+        "ignored_repeated_ngrams": 154,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.7255123425579886,
+        "p_value": 0.765931112143821,
+        "scored_token_count": 335,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0070-doc-00",
+      "cluster_id": "a-cluster-0070",
+      "token_count": 358,
+      "masked": {
+        "z_score": -0.4103049699311091,
+        "p_value": 0.6592088766113676,
+        "scored_token_count": 198,
+        "ignored_repeated_ngrams": 159,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.108406543164886,
+        "p_value": 0.982502080523567,
+        "scored_token_count": 357,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0070-doc-01",
+      "cluster_id": "a-cluster-0070",
+      "token_count": 364,
+      "masked": {
+        "z_score": -0.18257418583505536,
+        "p_value": 0.5724339297076471,
+        "scored_token_count": 160,
+        "ignored_repeated_ngrams": 203,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.5757575757575758,
+        "p_value": 0.7176104736884756,
+        "scored_token_count": 363,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0070-doc-02",
+      "cluster_id": "a-cluster-0070",
+      "token_count": 346,
+      "masked": {
+        "z_score": -1.0389645436542283,
+        "p_value": 0.8505893867457096,
+        "scored_token_count": 193,
+        "ignored_repeated_ngrams": 152,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.2690950333847635,
+        "p_value": 0.988368726328263,
+        "scored_token_count": 345,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0070-doc-03",
+      "cluster_id": "a-cluster-0070",
+      "token_count": 365,
+      "masked": {
+        "z_score": -1.5705625319186327,
+        "p_value": 0.9418578506059574,
+        "scored_token_count": 185,
+        "ignored_repeated_ngrams": 179,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.9050921568102517,
+        "p_value": 0.9981642750893621,
+        "scored_token_count": 364,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0070-doc-04",
+      "cluster_id": "a-cluster-0070",
+      "token_count": 354,
+      "masked": {
+        "z_score": -0.4188539082916955,
+        "p_value": 0.6623385479525764,
+        "scored_token_count": 190,
+        "ignored_repeated_ngrams": 163,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.7349036231903594,
+        "p_value": 0.9968800728629575,
+        "scored_token_count": 353,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0071-doc-00",
+      "cluster_id": "a-cluster-0071",
+      "token_count": 349,
+      "masked": {
+        "z_score": -0.4502000299885319,
+        "p_value": 0.6737168926701473,
+        "scored_token_count": 199,
+        "ignored_repeated_ngrams": 149,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.8665782448262421,
+        "p_value": 0.8069134311208794,
+        "scored_token_count": 348,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0071-doc-01",
+      "cluster_id": "a-cluster-0071",
+      "token_count": 359,
+      "masked": {
+        "z_score": -0.7776182336165551,
+        "p_value": 0.7816029457287359,
+        "scored_token_count": 199,
+        "ignored_repeated_ngrams": 159,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.281584215164442,
+        "p_value": 0.9000057298339442,
+        "scored_token_count": 358,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0071-doc-02",
+      "cluster_id": "a-cluster-0071",
+      "token_count": 345,
+      "masked": {
+        "z_score": 0.12598815766974242,
+        "p_value": 0.4498706493435857,
+        "scored_token_count": 189,
+        "ignored_repeated_ngrams": 155,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.7470873676376284,
+        "p_value": 0.7724945875328632,
+        "scored_token_count": 344,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0071-doc-03",
+      "cluster_id": "a-cluster-0071",
+      "token_count": 366,
+      "masked": {
+        "z_score": -0.8682707417602442,
+        "p_value": 0.8073769323351221,
+        "scored_token_count": 214,
+        "ignored_repeated_ngrams": 151,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.8763769335624741,
+        "p_value": 0.809587423114734,
+        "scored_token_count": 365,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0071-doc-04",
+      "cluster_id": "a-cluster-0071",
+      "token_count": 352,
+      "masked": {
+        "z_score": -0.11923929502757463,
+        "p_value": 0.5474571121106027,
+        "scored_token_count": 211,
+        "ignored_repeated_ngrams": 140,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.9553170046101168,
+        "p_value": 0.8302912946288303,
+        "scored_token_count": 351,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0072-doc-00",
+      "cluster_id": "a-cluster-0072",
+      "token_count": 353,
+      "masked": {
+        "z_score": 1.270001270001905,
+        "p_value": 0.1020420888827866,
+        "scored_token_count": 186,
+        "ignored_repeated_ngrams": 166,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.3692744729379982,
+        "p_value": 0.35596157534609507,
+        "scored_token_count": 352,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0072-doc-01",
+      "cluster_id": "a-cluster-0072",
+      "token_count": 348,
+      "masked": {
+        "z_score": -0.03955938860646178,
+        "p_value": 0.5157777973632113,
+        "scored_token_count": 213,
+        "ignored_repeated_ngrams": 134,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.8368322319545539,
+        "p_value": 0.7986565614772191,
+        "scored_token_count": 347,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0072-doc-02",
+      "cluster_id": "a-cluster-0072",
+      "token_count": 366,
+      "masked": {
+        "z_score": 0.629940788348712,
+        "p_value": 0.26436666256071506,
+        "scored_token_count": 189,
+        "ignored_repeated_ngrams": 176,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.3598952417348737,
+        "p_value": 0.9130684615175944,
+        "scored_token_count": 365,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0072-doc-03",
+      "cluster_id": "a-cluster-0072",
+      "token_count": 367,
+      "masked": {
+        "z_score": -0.2169815183013731,
+        "p_value": 0.5858886259539154,
+        "scored_token_count": 177,
+        "ignored_repeated_ngrams": 189,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.30178582014172844,
+        "p_value": 0.6185923294566703,
+        "scored_token_count": 366,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0072-doc-04",
+      "cluster_id": "a-cluster-0072",
+      "token_count": 368,
+      "masked": {
+        "z_score": 0.16666666666666666,
+        "p_value": 0.43381616738909634,
+        "scored_token_count": 192,
+        "ignored_repeated_ngrams": 175,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.0548103556880966,
+        "p_value": 0.8542439662689929,
+        "scored_token_count": 367,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0073-doc-00",
+      "cluster_id": "a-cluster-0073",
+      "token_count": 372,
+      "masked": {
+        "z_score": -1.2570787221094177,
+        "p_value": 0.8956374344123389,
+        "scored_token_count": 216,
+        "ignored_repeated_ngrams": 155,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.727682454452322,
+        "p_value": 0.996810951298076,
+        "scored_token_count": 371,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0073-doc-01",
+      "cluster_id": "a-cluster-0073",
+      "token_count": 338,
+      "masked": {
+        "z_score": 0.200643088476282,
+        "p_value": 0.42048883169937623,
+        "scored_token_count": 207,
+        "ignored_repeated_ngrams": 130,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 1.1007595615142682,
+        "p_value": 0.13550065794100563,
+        "scored_token_count": 337,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0073-doc-02",
+      "cluster_id": "a-cluster-0073",
+      "token_count": 350,
+      "masked": {
+        "z_score": -0.1649572197684645,
+        "p_value": 0.5655111728177027,
+        "scored_token_count": 196,
+        "ignored_repeated_ngrams": 153,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.143479500348514,
+        "p_value": 0.8735802193851114,
+        "scored_token_count": 349,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0073-doc-03",
+      "cluster_id": "a-cluster-0073",
+      "token_count": 331,
+      "masked": {
+        "z_score": 0.18257418583505536,
+        "p_value": 0.42756607029235294,
+        "scored_token_count": 160,
+        "ignored_repeated_ngrams": 170,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.8263342440128466,
+        "p_value": 0.7956927434131518,
+        "scored_token_count": 330,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0073-doc-04",
+      "cluster_id": "a-cluster-0073",
+      "token_count": 344,
+      "masked": {
+        "z_score": 0.08206099398622181,
+        "p_value": 0.4672991053797461,
+        "scored_token_count": 198,
+        "ignored_repeated_ngrams": 145,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.4676097647914122,
+        "p_value": 0.679968159688285,
+        "scored_token_count": 343,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0074-doc-00",
+      "cluster_id": "a-cluster-0074",
+      "token_count": 353,
+      "masked": {
+        "z_score": 0.7896130531772135,
+        "p_value": 0.21487689136714017,
+        "scored_token_count": 193,
+        "ignored_repeated_ngrams": 159,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.24618298195866545,
+        "p_value": 0.40277029433374695,
+        "scored_token_count": 352,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0074-doc-01",
+      "cluster_id": "a-cluster-0074",
+      "token_count": 346,
+      "masked": {
+        "z_score": 0.6108472217815262,
+        "p_value": 0.27065036402361153,
+        "scored_token_count": 201,
+        "ignored_repeated_ngrams": 144,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.8392543274162825,
+        "p_value": 0.2006633034176341,
+        "scored_token_count": 345,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0074-doc-02",
+      "cluster_id": "a-cluster-0074",
+      "token_count": 331,
+      "masked": {
+        "z_score": 0.3799802978286742,
+        "p_value": 0.35198002014053,
+        "scored_token_count": 187,
+        "ignored_repeated_ngrams": 143,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.9534625892455922,
+        "p_value": 0.1701778711926008,
+        "scored_token_count": 330,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0074-doc-03",
+      "cluster_id": "a-cluster-0074",
+      "token_count": 353,
+      "masked": {
+        "z_score": -0.3862269678805871,
+        "p_value": 0.6503357085632764,
+        "scored_token_count": 181,
+        "ignored_repeated_ngrams": 171,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.0,
+        "p_value": 0.5,
+        "scored_token_count": 352,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0074-doc-04",
+      "cluster_id": "a-cluster-0074",
+      "token_count": 352,
+      "masked": {
+        "z_score": 0.29091007222318394,
+        "p_value": 0.3855600488969388,
+        "scored_token_count": 193,
+        "ignored_repeated_ngrams": 158,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.215716742976478,
+        "p_value": 0.5853957252673072,
+        "scored_token_count": 351,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0075-doc-00",
+      "cluster_id": "a-cluster-0075",
+      "token_count": 336,
+      "masked": {
+        "z_score": 0.9762956279494204,
+        "p_value": 0.16445899295742966,
+        "scored_token_count": 185,
+        "ignored_repeated_ngrams": 150,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 1.293304610646849,
+        "p_value": 0.09795286332166314,
+        "scored_token_count": 335,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0075-doc-01",
+      "cluster_id": "a-cluster-0075",
+      "token_count": 338,
+      "masked": {
+        "z_score": 2.138089935299395,
+        "p_value": 0.016254722322859756,
+        "scored_token_count": 168,
+        "ignored_repeated_ngrams": 169,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 2.358770488959146,
+        "p_value": 0.00916779592034644,
+        "scored_token_count": 337,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0075-doc-02",
+      "cluster_id": "a-cluster-0075",
+      "token_count": 361,
+      "masked": {
+        "z_score": 0.40225899335456483,
+        "p_value": 0.3437467150441975,
+        "scored_token_count": 206,
+        "ignored_repeated_ngrams": 154,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.0954451150103324,
+        "p_value": 0.863339160853851,
+        "scored_token_count": 360,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0075-doc-03",
+      "cluster_id": "a-cluster-0075",
+      "token_count": 336,
+      "masked": {
+        "z_score": 0.7101851883454066,
+        "p_value": 0.23879465231389307,
+        "scored_token_count": 191,
+        "ignored_repeated_ngrams": 144,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.03154401489382559,
+        "p_value": 0.4874178453926388,
+        "scored_token_count": 335,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0075-doc-04",
+      "cluster_id": "a-cluster-0075",
+      "token_count": 349,
+      "masked": {
+        "z_score": -0.4233337566673017,
+        "p_value": 0.6639741156704053,
+        "scored_token_count": 186,
+        "ignored_repeated_ngrams": 162,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.12379689211803459,
+        "p_value": 0.45073804630808556,
+        "scored_token_count": 348,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0076-doc-00",
+      "cluster_id": "a-cluster-0076",
+      "token_count": 375,
+      "masked": {
+        "z_score": -1.0731536552481717,
+        "p_value": 0.8583989097489835,
+        "scored_token_count": 211,
+        "ignored_repeated_ngrams": 163,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.6868664531193946,
+        "p_value": 0.9963937108270214,
+        "scored_token_count": 374,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0076-doc-01",
+      "cluster_id": "a-cluster-0076",
+      "token_count": 319,
+      "masked": {
+        "z_score": -0.5101127853361851,
+        "p_value": 0.695013775753454,
+        "scored_token_count": 155,
+        "ignored_repeated_ngrams": 163,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.0647523908238176,
+        "p_value": 0.5258144257664619,
+        "scored_token_count": 318,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0076-doc-02",
+      "cluster_id": "a-cluster-0076",
+      "token_count": 383,
+      "masked": {
+        "z_score": -0.1649572197684645,
+        "p_value": 0.5655111728177027,
+        "scored_token_count": 196,
+        "ignored_repeated_ngrams": 186,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.1225127634080432,
+        "p_value": 0.8691777580806741,
+        "scored_token_count": 382,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0076-doc-03",
+      "cluster_id": "a-cluster-0076",
+      "token_count": 361,
+      "masked": {
+        "z_score": 0.5,
+        "p_value": 0.3085375387259869,
+        "scored_token_count": 192,
+        "ignored_repeated_ngrams": 168,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.36514837167011077,
+        "p_value": 0.6424996726559554,
+        "scored_token_count": 360,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0076-doc-04",
+      "cluster_id": "a-cluster-0076",
+      "token_count": 365,
+      "masked": {
+        "z_score": 0.7101851883454066,
+        "p_value": 0.23879465231389307,
+        "scored_token_count": 191,
+        "ignored_repeated_ngrams": 173,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.24209101306752098,
+        "p_value": 0.5956451791740184,
+        "scored_token_count": 364,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0077-doc-00",
+      "cluster_id": "a-cluster-0077",
+      "token_count": 370,
+      "masked": {
+        "z_score": 1.0890201615584083,
+        "p_value": 0.1380724974517092,
+        "scored_token_count": 190,
+        "ignored_repeated_ngrams": 179,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.2705008904002297,
+        "p_value": 0.6066125339962983,
+        "scored_token_count": 369,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0077-doc-01",
+      "cluster_id": "a-cluster-0077",
+      "token_count": 348,
+      "masked": {
+        "z_score": 0.6810052246069989,
+        "p_value": 0.2479340922704255,
+        "scored_token_count": 184,
+        "ignored_repeated_ngrams": 163,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.5268943682676821,
+        "p_value": 0.29913347247633415,
+        "scored_token_count": 347,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0077-doc-02",
+      "cluster_id": "a-cluster-0077",
+      "token_count": 350,
+      "masked": {
+        "z_score": -0.9607689228305227,
+        "p_value": 0.8316658161949806,
+        "scored_token_count": 208,
+        "ignored_repeated_ngrams": 141,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.143479500348514,
+        "p_value": 0.8735802193851114,
+        "scored_token_count": 349,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0077-doc-03",
+      "cluster_id": "a-cluster-0077",
+      "token_count": 340,
+      "masked": {
+        "z_score": 0.5167036117861568,
+        "p_value": 0.30268153720129637,
+        "scored_token_count": 211,
+        "ignored_repeated_ngrams": 128,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.03135736227945324,
+        "p_value": 0.4874922721935682,
+        "scored_token_count": 339,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0077-doc-04",
+      "cluster_id": "a-cluster-0077",
+      "token_count": 335,
+      "masked": {
+        "z_score": 0.7539370349250518,
+        "p_value": 0.22544351551258524,
+        "scored_token_count": 190,
+        "ignored_repeated_ngrams": 144,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 1.0741008401311578,
+        "p_value": 0.14138874403366475,
+        "scored_token_count": 334,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0078-doc-00",
+      "cluster_id": "a-cluster-0078",
+      "token_count": 356,
+      "masked": {
+        "z_score": 0.08466675133346034,
+        "p_value": 0.46626316480752383,
+        "scored_token_count": 186,
+        "ignored_repeated_ngrams": 169,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.3370682771697426,
+        "p_value": 0.6319672846647193,
+        "scored_token_count": 355,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0078-doc-01",
+      "cluster_id": "a-cluster-0078",
+      "token_count": 352,
+      "masked": {
+        "z_score": 0.7101851883454066,
+        "p_value": 0.23879465231389307,
+        "scored_token_count": 191,
+        "ignored_repeated_ngrams": 160,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.40061680838488767,
+        "p_value": 0.34435113431319464,
+        "scored_token_count": 351,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0078-doc-02",
+      "cluster_id": "a-cluster-0078",
+      "token_count": 338,
+      "masked": {
+        "z_score": -0.08206099398622181,
+        "p_value": 0.5327008946202538,
+        "scored_token_count": 198,
+        "ignored_repeated_ngrams": 139,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.5346546441640732,
+        "p_value": 0.7035556549480971,
+        "scored_token_count": 337,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0078-doc-03",
+      "cluster_id": "a-cluster-0078",
+      "token_count": 336,
+      "masked": {
+        "z_score": -0.04339630366027462,
+        "p_value": 0.5173071879104331,
+        "scored_token_count": 177,
+        "ignored_repeated_ngrams": 158,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -1.608744759585105,
+        "p_value": 0.9461639178711458,
+        "scored_token_count": 335,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0078-doc-04",
+      "cluster_id": "a-cluster-0078",
+      "token_count": 337,
+      "masked": {
+        "z_score": 0.12340351046845906,
+        "p_value": 0.45089378868540764,
+        "scored_token_count": 197,
+        "ignored_repeated_ngrams": 139,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": 0.1259881576697424,
+        "p_value": 0.4498706493435857,
+        "scored_token_count": 336,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0079-doc-00",
+      "cluster_id": "a-cluster-0079",
+      "token_count": 349,
+      "masked": {
+        "z_score": 0.24618298195866545,
+        "p_value": 0.40277029433374695,
+        "scored_token_count": 198,
+        "ignored_repeated_ngrams": 150,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.24759378423606918,
+        "p_value": 0.5977756397619943,
+        "scored_token_count": 348,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0079-doc-01",
+      "cluster_id": "a-cluster-0079",
+      "token_count": 364,
+      "masked": {
+        "z_score": -0.15861031714362883,
+        "p_value": 0.5630120501017216,
+        "scored_token_count": 212,
+        "ignored_repeated_ngrams": 151,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.9393939393939394,
+        "p_value": 0.826235738238313,
+        "scored_token_count": 363,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0079-doc-02",
+      "cluster_id": "a-cluster-0079",
+      "token_count": 368,
+      "masked": {
+        "z_score": -0.0419960525565808,
+        "p_value": 0.5167490775269178,
+        "scored_token_count": 189,
+        "ignored_repeated_ngrams": 178,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.8137108458165315,
+        "p_value": 0.7920946903031822,
+        "scored_token_count": 367,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0079-doc-03",
+      "cluster_id": "a-cluster-0079",
+      "token_count": 371,
+      "masked": {
+        "z_score": 0.7815555663002407,
+        "p_value": 0.2172379044121553,
+        "scored_token_count": 197,
+        "ignored_repeated_ngrams": 173,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -0.9004503377814962,
+        "p_value": 0.8160596786101673,
+        "scored_token_count": 370,
+        "crosses_threshold": false
+      }
+    },
+    {
+      "document_id": "a-cluster-0079-doc-04",
+      "cluster_id": "a-cluster-0079",
+      "token_count": 360,
+      "masked": {
+        "z_score": 0.2088779965721784,
+        "p_value": 0.41727174073762513,
+        "scored_token_count": 191,
+        "ignored_repeated_ngrams": 168,
+        "crosses_threshold": false
+      },
+      "naive": {
+        "z_score": -2.0415825783756176,
+        "p_value": 0.9794035225582989,
+        "scored_token_count": 359,
+        "crosses_threshold": false
+      }
+    }
+  ],
+  "exclusions": []
+}

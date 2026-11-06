@@ -1,0 +1,9 @@
+{
+  "evidence_id": "rec-8",
+  "title": "SemStamp: A Semantic Watermark with Paraphrastic Robustness for Text Generation",
+  "pdf_url": "https://aclanthology.org/2024.naacl-long.226.pdf",
+  "paper_sha256": "3a78f1d0a920458cbd96d15c3652188051094112c234402fb0dc2c460f374976",
+  "paper_size_bytes": 984038,
+  "retrieved_at": "2026-08-14T23:12:30Z",
+  "pdf_header_verified": true
+}

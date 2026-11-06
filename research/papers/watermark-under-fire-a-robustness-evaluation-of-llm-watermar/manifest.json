@@ -1,0 +1,9 @@
+{
+  "evidence_id": "rec-21",
+  "title": "Watermark under Fire: A Robustness Evaluation of LLM Watermarking",
+  "pdf_url": "https://aclanthology.org/2025.findings-emnlp.1148.pdf",
+  "paper_sha256": "754d30913cbd289242629a97187e53c48d95298882bd18b70ce17788abaf7231",
+  "paper_size_bytes": 3586217,
+  "retrieved_at": "2026-08-14T23:13:50Z",
+  "pdf_header_verified": true
+}

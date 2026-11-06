@@ -1,0 +1,95 @@
+{
+  "$schema": "../schemas/calibration-manifest.schema.json",
+  "schema_version": "1.0.0",
+  "calibration_id": "cal_ocr_rapidocr_en_clean_pilot_v1",
+  "status": "draft",
+  "method": {
+    "method_id": "kgw",
+    "implementation_id": "transformers-WatermarkDetector-5.15.0",
+    "implementation_sha256": "27c31c9ce196a6739b5da3f621243d49986da2d1efa903110639990cafb3f1fc",
+    "author_repository_url": "https://github.com/jwkirchenbauer/lm-watermarking",
+    "author_commit": "82922516930c02f8aa322765defdb5863d07a00e",
+    "parity_status": "not-run"
+  },
+  "tokenizer": {
+    "tokenizer_id": "openai-community/gpt2",
+    "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+    "asset_sha256": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+    "normalization": "NFC",
+    "bos_policy": "tokenizer-native",
+    "eos_policy": "tokenizer-native",
+    "special_token_policy": "tokenizer-native"
+  },
+  "locale": "en",
+  "locale_fallback_order": [
+    "zh-Hant-TW",
+    "zh-TW",
+    "zh-Hant",
+    "en"
+  ],
+  "input_channel": {
+    "channel": "ocr",
+    "ocr": {
+      "engine_id": "rapidocr",
+      "engine_version": "1.2.3",
+      "profile_fingerprint": "5ea1eee20e6c6a137fd5c6d101990d059ad23cdbb88bf91d275b7d115328997f",
+      "language": "en",
+      "confidence_floor": 0.8,
+      "coverage_floor": 0.9,
+      "degradation": {
+        "name": "clean",
+        "severity": 0.0,
+        "seed": 0
+      }
+    }
+  },
+  "partitions": [
+    {
+      "role": "development",
+      "partition_id": "synthetic-v1-development",
+      "manifest_sha256": "47d6518623d33d055547ae9782a4cff5c72fe14007f045cc7cc723a4742a9413"
+    },
+    {
+      "role": "calibration",
+      "partition_id": "synthetic-v1-calibration",
+      "manifest_sha256": "47d6518623d33d055547ae9782a4cff5c72fe14007f045cc7cc723a4742a9413"
+    },
+    {
+      "role": "attack-tuning",
+      "partition_id": "synthetic-v1-attack-tuning",
+      "manifest_sha256": "47d6518623d33d055547ae9782a4cff5c72fe14007f045cc7cc723a4742a9413"
+    },
+    {
+      "role": "final-locked",
+      "partition_id": "synthetic-v1-final-locked",
+      "manifest_sha256": "47d6518623d33d055547ae9782a4cff5c72fe14007f045cc7cc723a4742a9413"
+    }
+  ],
+  "sampling": {
+    "independent_unit": "author-document-cluster",
+    "planned_independent_negatives": 2995,
+    "planned_independent_positives": 2995,
+    "cluster_fields": [
+      "document_id"
+    ],
+    "stopping_rule": "fixed sample: every cluster in the calibration partition is scored once; no interim looks and no threshold selection on this partition"
+  },
+  "scoring": {
+    "gamma": 0.25,
+    "context_width": 1,
+    "seeding_scheme": "lefthash",
+    "repeated_ngram_policy": "first-full-ngram-only",
+    "minimum_scored_tokens": 50,
+    "decision_threshold": 1.4026687687393442
+  },
+  "inference": {
+    "target_fpr": 0.001,
+    "confidence_level": 0.95,
+    "false_positive_interval": "clopper-pearson-exact-one-sided-upper",
+    "true_positive_interval": "clopper-pearson-exact-two-sided",
+    "claim_basis": "estimated-rate",
+    "multiplicity_family_id": "ocr-null-rapidocr-en-clean",
+    "multiplicity_policy": "single-predeclared-test"
+  },
+  "created_at": "2026-08-31T00:45:03.067318Z"
+}

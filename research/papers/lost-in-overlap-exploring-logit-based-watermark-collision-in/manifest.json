@@ -1,0 +1,9 @@
+{
+  "evidence_id": "rec-19",
+  "title": "Lost in Overlap: Exploring Logit-based Watermark Collision in LLMs",
+  "pdf_url": "https://aclanthology.org/2025.findings-naacl.37.pdf",
+  "paper_sha256": "ca6ac6c981bebf734cd9c45f11142c39e11933ab7386b0fa5f0ba0bc19437465",
+  "paper_size_bytes": 557733,
+  "retrieved_at": "2026-08-14T23:13:44Z",
+  "pdf_header_verified": true
+}

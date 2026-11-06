@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llm-watermark-lab.example/schemas/watermark-run-manifest-v1.json",
+  "title": "Watermark Run Manifest",
+  "type": "object",
+  "required": ["run_id", "run_type", "method_id", "input_sha256", "created_at", "software_version", "config"],
+  "properties": {
+    "run_id": {"type": "string", "format": "uuid"},
+    "parent_run_id": {"type": ["string", "null"]},
+    "run_type": {"enum": ["detect", "create", "transform", "analyze", "compare"]},
+    "method_id": {"type": "string"},
+    "compatibility": {"enum": ["verified", "experimental", "inspired", "keyless-forensic", "unsupported"]},
+    "input_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "normalized_sha256": {"type": ["string", "null"]},
+    "created_at": {"type": "string", "format": "date-time"},
+    "software_version": {"type": "string"},
+    "git_commit": {"type": ["string", "null"]},
+    "key_id": {"type": ["string", "null"]},
+    "config": {"type": "object"},
+    "artifacts": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": false
+}
+

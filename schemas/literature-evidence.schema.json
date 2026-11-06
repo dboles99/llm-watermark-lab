@@ -1,0 +1,206 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llm-watermark-lab.example/schemas/literature-evidence-v1.json",
+  "title": "LLM Watermark Lab Literature Evidence Ledger",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "reviewed_at",
+    "admission_policy",
+    "records"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "admission_policy": {
+      "const": "docs/research/EVIDENCE_ADMISSION_POLICY.md"
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/record"
+      }
+    }
+  },
+  "$defs": {
+    "record": {
+      "type": "object",
+      "required": [
+        "record_id",
+        "title",
+        "authors",
+        "year",
+        "venue",
+        "publication_status",
+        "stable_identifier",
+        "landing_url",
+        "pdf_url",
+        "index_records",
+        "evidence_tier",
+        "admission",
+        "admitted_uses",
+        "checked_at"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "pattern": "^[A-Z0-9_-]+$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authors": {
+          "type": "string",
+          "minLength": 1
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 1900,
+          "maximum": 2100
+        },
+        "venue": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publication_status": {
+          "enum": [
+            "peer-reviewed",
+            "indexed-preprint"
+          ]
+        },
+        "stable_identifier": {
+          "type": "object",
+          "minProperties": 1,
+          "properties": {
+            "doi": {
+              "type": "string",
+              "pattern": "^10\\."
+            },
+            "arxiv": {
+              "type": "string",
+              "pattern": "^[0-9]{4}\\.[0-9]{4,5}(v[0-9]+)?$"
+            },
+            "venue_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "pages": {
+              "type": "string",
+              "pattern": "^[0-9]+(-[0-9]+)?$"
+            }
+          },
+          "additionalProperties": false
+        },
+        "landing_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "pdf_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://.*(\\.pdf($|\\?)|/pdf($|[/?]))"
+        },
+        "index_records": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "provider",
+              "url"
+            ],
+            "properties": {
+              "provider": {
+                "enum": [
+                  "Crossref",
+                  "DBLP",
+                  "OpenAlex",
+                  "Semantic Scholar",
+                  "Google Scholar",
+                  "PubMed",
+                  "J-GLOBAL"
+                ]
+              },
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "pattern": "^https://"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "evidence_tier": {
+          "enum": [
+            "core",
+            "adjacent",
+            "watchlist"
+          ]
+        },
+        "admission": {
+          "const": "admitted"
+        },
+        "admitted_uses": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "hypothesis_role": {
+          "type": "object",
+          "required": [
+            "directive",
+            "role",
+            "status",
+            "note"
+          ],
+          "properties": {
+            "directive": {
+              "type": "string",
+              "pattern": "^docs/research/[a-zA-Z0-9_.-]+\\.md$"
+            },
+            "role": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "hypothesis-not-finding",
+                "provider-disclosed"
+              ],
+              "description": "'hypothesis-not-finding' for a candidate mechanism under test. 'provider-disclosed' only where the provider has publicly stated the mechanism; the disclosure source must be named in 'note'. Disclosure of a mechanism is still not licence to attribute authorship from a detection."
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        "notes": {
+          "type": "string"
+        },
+        "checked_at": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,9 @@
+{
+  "evidence_id": "rec-29",
+  "title": "Practical Secure Aggregation for Privacy-Preserving Machine Learning",
+  "pdf_url": "https://eprint.iacr.org/2017/281.pdf",
+  "paper_sha256": "49bfc7bdc3cab15d22ca027e79ae8c100e921e760a32e64ede606f95dd9cd96b",
+  "paper_size_bytes": 1320240,
+  "retrieved_at": "2026-08-14T23:14:03Z",
+  "pdf_header_verified": true
+}

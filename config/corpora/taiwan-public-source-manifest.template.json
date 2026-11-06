@@ -1,0 +1,26 @@
+{
+  "$comment": "Template for a Taiwan public/government corpus source manifest. Copy to data/corpora/taiwan-public/source-manifest.json, edit to your actual sources, and place text files under sources/<source_id>/*.txt. Every source must declare an explicit open license before ingestion; network fetching is prohibited.",
+  "sources": [
+    {
+      "source_id": "example-gov-gazette",
+      "title": "Executive Yuan Gazette excerpts (example)",
+      "url": "https://data.gov.tw/dataset/EXAMPLE",
+      "license_kind": "government-open-data",
+      "license_reference": "https://data.gov.tw/license",
+      "retrieved_at": "1970-01-01T00:00:00Z",
+      "domain": "government-legal",
+      "author_group": "executive-yuan"
+    },
+    {
+      "source_id": "example-open-news",
+      "title": "Open-licensed news archive (example)",
+      "url": "https://example.org/news",
+      "license_kind": "spdx-open",
+      "license_reference": "CC-BY-4.0",
+      "retrieved_at": "1970-01-01T00:00:00Z",
+      "domain": "news",
+      "author_group": ""
+    }
+  ],
+  "additional_zh_cn_markers": []
+}

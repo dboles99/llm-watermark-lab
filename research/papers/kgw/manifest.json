@@ -1,0 +1,72 @@
+{
+  "method_id": "kgw",
+  "primary_papers": [
+    {
+      "title": "A Watermark for Large Language Models",
+      "authors": [
+        "John Kirchenbauer",
+        "Jonas Geiping",
+        "Yuxin Wen",
+        "Jonathan Katz",
+        "Ian Miers",
+        "Tom Goldstein"
+      ],
+      "venue": "ICML 2023",
+      "persistent_id": "arXiv:2301.10226",
+      "version": "v1",
+      "retrieval_date": "2026-08-14",
+      "local_file": "research/papers/a-watermark-for-large-language-models/paper.pdf",
+      "sha256": "192bbc0d3929b72b7b6962c84614c82006bf4687e09c2e544f7790eac7eab5bb",
+      "note": "PMLR official PDF downloaded and SHA-256 verified."
+    },
+    {
+      "title": "On the Reliability of Watermarks for Large Language Models",
+      "authors": [
+        "John Kirchenbauer",
+        "Jonas Geiping",
+        "Yuxin Wen",
+        "Manli Shu",
+        "Khalid Saifullah",
+        "Kezhi Kong",
+        "Kasun Fernando",
+        "Aniruddha Saha",
+        "Micah Goldblum",
+        "Tom Goldstein"
+      ],
+      "venue": "ICLR 2024",
+      "persistent_id": "arXiv:2306.04634",
+      "version": "v1",
+      "retrieval_date": "2026-08-14",
+      "local_file": "research/papers/on-the-reliability-of-watermarks-for-large-language-models/paper.pdf",
+      "sha256": "560fc007b83fd22bfed9609282def2ef8ae291b8c1d6ba71f1ffa7bc59ab2e01",
+      "note": "ICLR official PDF downloaded and SHA-256 verified."
+    }
+  ],
+  "supplemental_materials": [],
+  "author_code": [
+    {
+      "repository": "https://github.com/jwkirchenbauer/lm-watermarking",
+      "commit": "82922516930c02f8aa322765defdb5863d07a00e",
+      "commit_date": "2025-09-17T04:30:05Z",
+      "checked_at": "2026-08-14",
+      "license_spdx": "Apache-2.0",
+      "compatibility_target": "extended_watermark_processor.py",
+      "sources": [
+        {
+          "path": "extended_watermark_processor.py",
+          "git_blob_sha1": "8c55d58c9cf336ac31d7118c9555ed3c12a9296e",
+          "sha256": "fc3469e677ba3f2a0e4cdf5a7cae2852d8d423c02cde395cc1e038fca42038a1"
+        },
+        {
+          "path": "alternative_prf_schemes.py",
+          "git_blob_sha1": "d907404c7e2affc5ea0b81bd58ad2dc1b5937b97",
+          "sha256": "51c854949c8e9309208dc6e57e2f9edbb8f2d90f0ff61edcd4ed2ef890e19ddc"
+        }
+      ],
+      "runtime_profile": "kgw-author-simple1-torch-2.13.0-cpu-win-amd64-v1"
+    }
+  ],
+  "status": "author-code-pinned-paper-pdf-hashed",
+  "retrieved_by": "repository research workflow",
+  "license_note": "arXiv preprints are typically permissively viewable; confirm license before redistribution. Do not commit PDFs to a public repository without explicit permission."
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "../../../../schemas/gate-report.schema.json",
+  "schema_version": "2.0.0",
+  "gate_id": "t06-kgw-calibration-phase1-synthetic-pilot-v1",
+  "task_id": "T06",
+  "step_id": "kgw-calibration-phase1",
+  "status": "completed",
+  "artifact_complete": true,
+  "checks_passed": true,
+  "promotion_eligible": false,
+  "deployment_ready": false,
+  "checks": [
+    {
+      "check_id": "frozen-inputs-verified",
+      "status": "passed",
+      "evidence": [
+        "author_commit=82922516930c02f8aa322765defdb5863d07a00e",
+        "tokenizer_fingerprint_en=4121d536fba0daad3acbf10dfead9c675dd28330311b591ec0882bbea152a757",
+        "tokenizer_fingerprint_zh_hant_tw=b9b7d67330dd24ba89a01d3c5389cf06dd51d9dad0968f8ff18918fab8836020",
+        "torch=2.13.0+cpu git cf30153c4c131c8164ee7798e5022d810682e2cb"
+      ],
+      "command": "python scripts/run_kgw_calibration.py --output-root project/artifacts/scientific-validation/kgw-calibration-phase1",
+      "notes": "All preregistration section 2 hashes verified before scoring."
+    },
+    {
+      "check_id": "e1-cluster-fpr",
+      "status": "passed",
+      "evidence": [
+        "en: 0/40 FP clusters, CP95 upper 0.0722",
+        "zh-Hant-TW: 0/40 FP clusters, CP95 upper 0.0722"
+      ],
+      "command": "python scripts/run_kgw_calibration.py",
+      "notes": "Cluster-level worst-case FPR with exact one-sided upper bounds."
+    },
+    {
+      "check_id": "manifests-schema-and-semantic-valid",
+      "status": "passed",
+      "evidence": [
+        "en: draft manifest validated",
+        "zh-Hant-TW: draft manifest validated"
+      ],
+      "command": "python scripts/run_kgw_calibration.py",
+      "notes": "Draft2020-12 schema plus semantic validator; status=draft."
+    }
+  ],
+  "finding_ids": [],
+  "disposition": "Phase 1 synthetic pilot executed per the frozen preregistration with three pre-recorded deviations. Pipeline mechanics validated; no scientific FPR claim beyond the declared pilot bound.",
+  "blockers": [
+    "Synthetic corpora are non-scientific; real Taiwan public corpora require native review before any frozen calibration.",
+    "40 clusters per locale bound the zero-event CP95 upper bound near 7.2%.",
+    "Real-model generation is deferred at the approved $0 API spend ceiling."
+  ],
+  "warnings": [
+    "Draft manifests use claim_basis=estimated-rate; not promotable.",
+    "E3 positives are forced-green token sequences, not real-model text."
+  ],
+  "summary": "Executed frozen study prereg-kgw-cal-phase1-v1: en masked FPR 0/40 clusters (CP95 upper 0.0722); zh-Hant-TW masked FPR 0/40 clusters (CP95 upper 0.0722)"
+}

@@ -1,0 +1,175 @@
+{
+  "stratum": {
+    "engine_id": "rapidocr",
+    "engine_version": "1.2.3",
+    "profile_fingerprint": "5ea1eee20e6c6a137fd5c6d101990d059ad23cdbb88bf91d275b7d115328997f",
+    "language": "en",
+    "degradation": {
+      "name": "clean",
+      "severity": 0.0,
+      "seed": 0
+    }
+  },
+  "cluster_count": 24,
+  "scored_documents": 32,
+  "dropped_documents": 16,
+  "threshold": 1.4026687687393442,
+  "target_fpr": 0.001,
+  "confidence_level": 0.95,
+  "false_positive_clusters": 1,
+  "observed_fpr": 0.041666666666666664,
+  "attainable_upper_bound": 0.19020396669201167,
+  "target_attainable": false,
+  "cluster_scores": [
+    {
+      "cluster_id": "cluster-0000",
+      "max_score": 0.7559289460184544,
+      "scored": 1,
+      "dropped": 1
+    },
+    {
+      "cluster_id": "cluster-0001",
+      "max_score": -0.795587079770736,
+      "scored": 1,
+      "dropped": 1
+    },
+    {
+      "cluster_id": "cluster-0002",
+      "max_score": -0.1901172751573434,
+      "scored": 1,
+      "dropped": 1
+    },
+    {
+      "cluster_id": "cluster-0003",
+      "max_score": 1.4026687687393442,
+      "scored": 2,
+      "dropped": 0
+    },
+    {
+      "cluster_id": "cluster-0004",
+      "max_score": 0.2519763153394848,
+      "scored": 2,
+      "dropped": 0
+    },
+    {
+      "cluster_id": "cluster-0005",
+      "max_score": 0.3094922302950865,
+      "scored": 2,
+      "dropped": 0
+    },
+    {
+      "cluster_id": "cluster-0006",
+      "max_score": -0.30599503068105227,
+      "scored": 1,
+      "dropped": 1
+    },
+    {
+      "cluster_id": "cluster-0007",
+      "max_score": 0.0,
+      "scored": 2,
+      "dropped": 0
+    },
+    {
+      "cluster_id": "cluster-0008",
+      "max_score": -0.43328912241312106,
+      "scored": 1,
+      "dropped": 1
+    },
+    {
+      "cluster_id": "cluster-0009",
+      "max_score": 0.8238415256818213,
+      "scored": 1,
+      "dropped": 1
+    },
+    {
+      "cluster_id": "cluster-0010",
+      "max_score": -1.58230961057048,
+      "scored": 1,
+      "dropped": 1
+    },
+    {
+      "cluster_id": "cluster-0011",
+      "max_score": 0.8046797987672248,
+      "scored": 1,
+      "dropped": 1
+    },
+    {
+      "cluster_id": "cluster-0012",
+      "max_score": -0.9847319278346618,
+      "scored": 2,
+      "dropped": 0
+    },
+    {
+      "cluster_id": "cluster-0013",
+      "max_score": 1.3308209261014037,
+      "scored": 2,
+      "dropped": 0
+    },
+    {
+      "cluster_id": "cluster-0014",
+      "max_score": -0.12451456127293807,
+      "scored": 1,
+      "dropped": 1
+    },
+    {
+      "cluster_id": "cluster-0015",
+      "max_score": 0.12451456127293807,
+      "scored": 2,
+      "dropped": 0
+    },
+    {
+      "cluster_id": "cluster-0016",
+      "max_score": null,
+      "scored": 0,
+      "dropped": 2
+    },
+    {
+      "cluster_id": "cluster-0017",
+      "max_score": -0.4923659639173309,
+      "scored": 1,
+      "dropped": 1
+    },
+    {
+      "cluster_id": "cluster-0018",
+      "max_score": 0.9393364366277243,
+      "scored": 1,
+      "dropped": 1
+    },
+    {
+      "cluster_id": "cluster-0019",
+      "max_score": 0.0,
+      "scored": 2,
+      "dropped": 0
+    },
+    {
+      "cluster_id": "cluster-0020",
+      "max_score": 0.7559289460184544,
+      "scored": 2,
+      "dropped": 0
+    },
+    {
+      "cluster_id": "cluster-0021",
+      "max_score": -0.38254602783800296,
+      "scored": 1,
+      "dropped": 1
+    },
+    {
+      "cluster_id": "cluster-0022",
+      "max_score": 0.6888467201936644,
+      "scored": 1,
+      "dropped": 1
+    },
+    {
+      "cluster_id": "cluster-0023",
+      "max_score": 1.6576994539646794,
+      "scored": 1,
+      "dropped": 1
+    }
+  ],
+  "warnings": [
+    "1 of 24 clusters produced no scorable reading and are excluded from the null",
+    "23 clusters cannot evidence a 0.001 FPR: the tightest attainable one-sided 0.95 bound here is 0.1902"
+  ],
+  "note": "Pilot calibration on synthetic negatives. Synthetic text is explicitly non-scientific: it validates the pipeline and the threshold arithmetic, but it cannot support a claim about real human text. Status stays 'draft' until measured on a licensed corpus.",
+  "manifest_sha256": "2f3d727ce2059ea386f4746d0c5421059dbce2eddf6678bf34032cf1143fa4f9"
+}

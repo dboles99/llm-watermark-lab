@@ -1,0 +1,27 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.env
+data/keys/*
+!data/keys/.gitkeep
+data/corpora/*
+!data/corpora/.gitkeep
+artifacts/runs/*
+artifacts/exports/*
+artifacts/plots/*
+*.sqlite3
+target/
+
+# Draft publications and personal working notes that should not be in version control.
+# The canonical versions live in docs/ and notebooks/; .docx exports are generated outputs.
+*.docx
+brainstorming session and research for detecting and making ai watermarks_14AUG2026.md
+
+.claude-embeddings/
+
+# Evidence PDFs are downloaded and hashed locally but not committed
+# (copyrighted academic papers). Manifests with SHA-256 hashes ARE committed.
+research/papers/*/paper.pdf

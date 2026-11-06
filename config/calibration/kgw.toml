@@ -1,0 +1,56 @@
+# Planning defaults only. This file is not a frozen calibration and cannot
+# supply an estimated FPR. Frozen studies use calibration-manifest.schema.json.
+status = "planning-only-not-calibrated"
+manifest_schema = "schemas/calibration-manifest.schema.json"
+
+[method]
+id = "kgw"
+author_profile = "kgw-author-simple1-torch-2.13.0-cpu-win-amd64-v1"
+author_commit = "82922516930c02f8aa322765defdb5863d07a00e"
+repeated_ngram_policy = "first-full-ngram-only"
+
+[locales]
+confirmatory = ["en", "zh-Hant-TW"]
+fallback_order = ["zh-Hant-TW", "zh-TW", "zh-Hant", "en"]
+forbidden = ["zh-CN"]
+separate_thresholds_required = true
+
+[tokenizer]
+exact_id_required = true
+immutable_revision_required = true
+asset_sha256_required = true
+normalization_policy_required = true
+special_token_policy_required = true
+offline_fail_closed = true
+
+[sampling]
+independent_unit = "author-document-cluster"
+minimum_zero_event_negatives_at_0_1_percent_fpr_95_one_sided = 2995
+default_confirmatory_positives_per_cell = 500
+allocation = "preregistered-scientific-strata-not-cartesian-product"
+partitions = ["development", "calibration", "attack-tuning", "final-locked"]
+optional_stopping = false
+
+[target_fpr]
+strict = 0.001
+standard = 0.01
+exploratory = 0.05
+
+[confidence]
+false_positive_interval = "clopper-pearson-exact-one-sided-upper"
+true_positive_interval = "clopper-pearson-exact-two-sided"
+level = 0.95
+
+[multiplicity]
+family_definition_required = true
+policy_must_be_preregistered = true
+
+[short_text]
+inconclusive_below_scored_tokens = 30
+low_entropy_inconclusive = true
+
+[promotion]
+requires_author_parity_report = true
+requires_frozen_calibration_manifest = true
+requires_locale_specific_corpus = true
+requires_blind_rerun = true

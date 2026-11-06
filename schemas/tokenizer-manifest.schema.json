@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llm-watermark-lab.example/schemas/tokenizer-manifest-v1.json",
+  "title": "LLM Watermark Lab Tokenizer Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "profile_id",
+    "tokenizer_id",
+    "revision",
+    "source_url",
+    "license_spdx",
+    "retrieved_at",
+    "runtime",
+    "policy",
+    "assets",
+    "asset_aggregate_sha256",
+    "tokenizer_fingerprint_sha256",
+    "evaluated_locales",
+    "fallback_locales",
+    "scientific_status"
+  ],
+  "properties": {
+    "$schema": {"type": "string"},
+    "schema_version": {"const": "1.0.0"},
+    "profile_id": {"type": "string", "pattern": "^[a-zA-Z0-9._/@-]+$"},
+    "tokenizer_id": {"type": "string", "minLength": 1},
+    "revision": {"type": "string", "pattern": "^[a-f0-9]{40}$"},
+    "source_url": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "license_spdx": {"type": "string", "minLength": 1},
+    "retrieved_at": {"type": "string", "format": "date"},
+    "runtime": {
+      "type": "object",
+      "required": ["python", "transformers", "tokenizers", "huggingface_hub", "backend"],
+      "properties": {
+        "python": {"type": "string", "minLength": 1},
+        "transformers": {"type": "string", "minLength": 1},
+        "tokenizers": {"type": "string", "minLength": 1},
+        "huggingface_hub": {"type": "string", "minLength": 1},
+        "backend": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "policy": {
+      "type": "object",
+      "required": ["unicode_normalization", "add_model_special_tokens", "add_bos", "add_eos"],
+      "properties": {
+        "unicode_normalization": {"enum": ["none", "NFC"]},
+        "add_model_special_tokens": {"type": "boolean"},
+        "add_bos": {"type": "boolean"},
+        "add_eos": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    },
+    "assets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "sha256", "size_bytes"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "sha256": {"$ref": "#/$defs/sha256"},
+          "size_bytes": {"type": "integer", "minimum": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "asset_aggregate_sha256": {"$ref": "#/$defs/sha256"},
+    "tokenizer_fingerprint_sha256": {"$ref": "#/$defs/sha256"},
+    "evaluated_locales": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"enum": ["en", "zh-Hant-TW"]}
+    },
+    "fallback_locales": {"const": []},
+    "scientific_status": {"const": "mechanics-parity-only"},
+    "limitations": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  },
+  "additionalProperties": false
+}

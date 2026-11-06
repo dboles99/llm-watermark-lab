@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llm-watermark-lab.example/schemas/tee-verification-statement-v1.json",
+  "title": "LLM Watermark Lab TEE Verification Statement",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "statement_id",
+    "backend",
+    "simulated",
+    "platform",
+    "enclave_measurement_sha256",
+    "nonce",
+    "normalized_text_sha256",
+    "detector_id",
+    "detector_code_sha256",
+    "detector_config_sha256",
+    "calibration_artifact_sha256",
+    "key_epoch_reference",
+    "decision",
+    "attestation_evidence",
+    "issued_at",
+    "expires_at",
+    "verification_status"
+  ],
+  "properties": {
+    "$schema": {"type": "string"},
+    "schema_version": {"const": "1.0.0"},
+    "statement_id": {"type": "string", "pattern": "^[a-zA-Z0-9_-]+$"},
+    "backend": {"enum": ["tee-simulator", "remote-tee"]},
+    "simulated": {"type": "boolean"},
+    "platform": {"type": "string", "minLength": 1},
+    "enclave_measurement_sha256": {"$ref": "#/$defs/sha256"},
+    "nonce": {"type": "string", "pattern": "^[a-zA-Z0-9_-]{16,}$"},
+    "normalized_text_sha256": {"$ref": "#/$defs/sha256"},
+    "detector_id": {"type": "string", "minLength": 1},
+    "detector_code_sha256": {"$ref": "#/$defs/sha256"},
+    "detector_config_sha256": {"$ref": "#/$defs/sha256"},
+    "calibration_artifact_sha256": {"$ref": "#/$defs/sha256"},
+    "key_epoch_reference": {"type": "string", "pattern": "^epoch_[a-zA-Z0-9_-]{8,}$"},
+    "decision": {"enum": ["verified-compatible-watermark", "not-detected", "inconclusive"]},
+    "calibrated_fpr_upper_bound": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "attestation_evidence": {
+      "type": "object",
+      "required": ["artifact_id", "format", "sha256", "size_bytes"],
+      "properties": {
+        "artifact_id": {"type": "string", "pattern": "^[a-zA-Z0-9_-]+$"},
+        "format": {"type": "string", "minLength": 1},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "size_bytes": {"type": "integer", "minimum": 1}
+      },
+      "additionalProperties": false
+    },
+    "issued_at": {"type": "string", "format": "date-time"},
+    "expires_at": {"type": "string", "format": "date-time"},
+    "verification_status": {"enum": ["simulated-only", "attested-valid", "attested-invalid"]}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"backend": {"const": "tee-simulator"}}, "required": ["backend"]},
+      "then": {
+        "properties": {
+          "simulated": {"const": true},
+          "verification_status": {"const": "simulated-only"}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"backend": {"const": "remote-tee"}}, "required": ["backend"]},
+      "then": {"properties": {"simulated": {"const": false}}}
+    }
+  ],
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  },
+  "additionalProperties": false
+}

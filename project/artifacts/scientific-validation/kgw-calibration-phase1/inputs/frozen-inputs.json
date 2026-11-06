@@ -1,0 +1,51 @@
+{
+  "verified_at": "2026-08-15T00:40:00.075824Z",
+  "author_profile_id": "kgw-author-simple1-torch-2.13.0-cpu-win-amd64-v1",
+  "author_commit": "82922516930c02f8aa322765defdb5863d07a00e",
+  "author_source_sha256": "fc3469e677ba3f2a0e4cdf5a7cae2852d8d423c02cde395cc1e038fca42038a1",
+  "prf_source_sha256": "51c854949c8e9309208dc6e57e2f9edbb8f2d90f0ff61edcd4ed2ef890e19ddc",
+  "hash_key": 15485863,
+  "kgw_icml2023_pdf_sha256": "192bbc0d3929b72b7b6962c84614c82006bf4687e09c2e544f7790eac7eab5bb",
+  "kgw_iclr2024_pdf_sha256": "560fc007b83fd22bfed9609282def2ef8ae291b8c1d6ba71f1ffa7bc59ab2e01",
+  "tokenizer_id": "openai-community/gpt2",
+  "tokenizer_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+  "tokenizer_fingerprint_en_sha256": "4121d536fba0daad3acbf10dfead9c675dd28330311b591ec0882bbea152a757",
+  "tokenizer_fingerprint_zh_hant_tw_sha256": "b9b7d67330dd24ba89a01d3c5389cf06dd51d9dad0968f8ff18918fab8836020",
+  "asset_aggregate_sha256": "cc2a1328bb47f72377dbcde5e6e68bcf8efa6c3daa030ff1162593abf48041f6",
+  "backend_versions": [
+    [
+      "huggingface_hub",
+      "1.27.0"
+    ],
+    [
+      "tokenizers",
+      "0.22.2"
+    ],
+    [
+      "transformers",
+      "5.15.0"
+    ]
+  ],
+  "torch_version": "2.13.0+cpu",
+  "torch_git_version": "cf30153c4c131c8164ee7798e5022d810682e2cb",
+  "corpus_seeds": {
+    "en": {
+      "development_calibration": 20260815,
+      "attack_final": 20260817
+    },
+    "zh-Hant-TW": {
+      "development_calibration": 20260816,
+      "attack_final": 20260818
+    }
+  },
+  "partition_plan": {
+    "development": 40,
+    "calibration": 40,
+    "attack-tuning": 20,
+    "final-locked": 40
+  },
+  "gamma": 0.25,
+  "threshold": 4.0,
+  "analysis_code_sha256": "427ce8050e20eb3dd7f85367254ecb3b4ec582f9c35046dad3976380265f8584",
+  "exclusion_policy_sha256": "4defe9c16ea379a6ec7c752e6285937a4959a0cc7b71db90e8fbc46664e7a264"
+}

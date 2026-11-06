@@ -1,0 +1,824 @@
+{
+  "$schema": "../schemas/literature-evidence.schema.json",
+  "schema_version": "1.0.0",
+  "reviewed_at": "2026-08-30",
+  "admission_policy": "docs/research/EVIDENCE_ADMISSION_POLICY.md",
+  "records": [
+    {
+      "record_id": "KGW_2023",
+      "title": "A Watermark for Large Language Models",
+      "authors": "John Kirchenbauer, Jonas Geiping, Yuxin Wen, Jonathan Katz, Ian Miers, and Tom Goldstein",
+      "year": 2023,
+      "venue": "ICML / PMLR 202",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "arxiv": "2301.10226",
+        "venue_id": "PMLR-v202-kirchenbauer23a",
+        "doi": "10.48550/arXiv.2301.10226",
+        "pages": "17061-17084"
+      },
+      "landing_url": "https://proceedings.mlr.press/v202/kirchenbauer23a.html",
+      "pdf_url": "https://proceedings.mlr.press/v202/kirchenbauer23a/kirchenbauer23a.pdf",
+      "index_records": [
+        {
+          "provider": "OpenAlex",
+          "url": "https://openalex.org/W4318149317"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "claude-hypothesis-model",
+        "baseline",
+        "detector-statistic",
+        "author-code-parity"
+      ],
+      "checked_at": "2026-08-30",
+      "hypothesis_role": {
+        "directive": "docs/research/SCIENTIFIC_ROADMAP.md",
+        "role": "RELATED_FAMILY_WHOSE_DETECTION_TESTS_GENERALISE",
+        "status": "hypothesis-not-finding",
+        "note": "Demoted from PRIMARY on 2026-08-30. Anthropic disclosed on 2026-08-14 that Claude's text watermark is a version of SynthID-Text, which is a different family. KGW is retained because Red-Green-family tests are reported to generalise to SynthID-Text (Gloaguen et al., ICLR 2025, App. F.4) provided the context width is matched exactly (H = h, not H <= h). KGW also remains the canonical generator, positive control, and author-parity target."
+      }
+    },
+    {
+      "record_id": "KGW_RELIABILITY_2024",
+      "title": "On the Reliability of Watermarks for Large Language Models",
+      "authors": "John Kirchenbauer, Jonas Geiping, Yuxin Wen, Manli Shu, Khalid Saifullah, Kezhi Kong, Kasun Fernando, Aniruddha Saha, Micah Goldblum, and Tom Goldstein",
+      "year": 2024,
+      "venue": "ICLR 2024",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "arxiv": "2306.04634",
+        "venue_id": "ICLR-d78e9e4316e1714fbb0f20be66f8044c"
+      },
+      "landing_url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/d78e9e4316e1714fbb0f20be66f8044c-Abstract-Conference.html",
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/d78e9e4316e1714fbb0f20be66f8044c-Paper-Conference.pdf",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/conf/iclr/KirchenbauerGWS24"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "repeated-ngram-detection",
+        "robustness",
+        "mixed-source-detection"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "SYNTHID_2024",
+      "title": "Scalable Watermarking for Identifying Large Language Model Outputs",
+      "authors": "Sumanth Dathathri et al.",
+      "year": 2024,
+      "venue": "Nature",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.1038/s41586-024-08025-4"
+      },
+      "landing_url": "https://www.nature.com/articles/s41586-024-08025-4",
+      "pdf_url": "https://www.nature.com/articles/s41586-024-08025-4.pdf",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/journals/nature/DathathriSGHMWBKSMHVMBB24.html"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "baseline",
+        "claude-mechanism-model",
+        "deployment-evaluation",
+        "detector-statistic"
+      ],
+      "checked_at": "2026-08-30",
+      "hypothesis_role": {
+        "directive": "docs/research/SCIENTIFIC_ROADMAP.md",
+        "role": "PRIMARY_CLAUDE_WATERMARK_MECHANISM",
+        "status": "provider-disclosed",
+        "note": "Promoted to PRIMARY on 2026-08-30. Anthropic states at https://www.anthropic.com/news/claude-text-watermark (published 2026-08-14) that \"Claude's text watermark is a version of the SynthID-Text approach published by Google DeepMind\", applied globally to models launched on or after 2026-08-02. Verified by direct fetch on 2026-08-30. This discloses a MECHANISM, not a licence to attribute authorship: a detection still does not identify a provider without an authorised compatible verifier, and Anthropic itself states a detected mark is not fully conclusive."
+      }
+    },
+    {
+      "record_id": "DISTORTION_FREE_2024",
+      "title": "Robust Distortion-Free Watermarks for Language Models",
+      "authors": "Rohith Kuditipudi, John Thickstun, Tatsunori Hashimoto, and Percy Liang",
+      "year": 2024,
+      "venue": "Transactions on Machine Learning Research",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "arxiv": "2307.15593",
+        "venue_id": "OpenReview-FpaCL1MO2C"
+      },
+      "landing_url": "https://openreview.net/forum?id=FpaCL1MO2C",
+      "pdf_url": "https://arxiv.org/pdf/2307.15593",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/journals/tmlr/KuditipudiTHL24.html"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "baseline",
+        "distortion-free-claim",
+        "alignment-detection"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "UNBIASED_2024",
+      "title": "Unbiased Watermark for Large Language Models",
+      "authors": "Zhihao Hu et al.",
+      "year": 2024,
+      "venue": "ICLR",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "arxiv": "2310.10669",
+        "venue_id": "OpenReview-uWVC5FVidc"
+      },
+      "landing_url": "https://openreview.net/forum?id=uWVC5FVidc",
+      "pdf_url": "https://arxiv.org/pdf/2310.10669",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/conf/iclr/HuCWWZH24.html"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "baseline",
+        "unbiasedness-property"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "UNDETECTABLE_2024",
+      "title": "Undetectable Watermarks for Language Models",
+      "authors": "Miranda Christ, Sam Gunn, and Or Zamir",
+      "year": 2024,
+      "venue": "COLT / PMLR 247",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "arxiv": "2306.09194",
+        "venue_id": "PMLR-v247-christ24a"
+      },
+      "landing_url": "https://proceedings.mlr.press/v247/christ24a.html",
+      "pdf_url": "https://proceedings.mlr.press/v247/christ24a/christ24a.pdf",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/conf/colt/ChristGZ24.html"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "cryptographic-security",
+        "threat-model"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "WATERMARKS_SAND_2024",
+      "title": "Watermarks in the Sand: Impossibility of Strong Watermarking for Language Models",
+      "authors": "Hanlin Zhang, Benjamin L. Edelman, Danilo Francati, Daniele Venturi, Giuseppe Ateniese, and Boaz Barak",
+      "year": 2024,
+      "venue": "ICML / PMLR 235",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "arxiv": "2311.04378",
+        "venue_id": "PMLR-v235-zhang24o"
+      },
+      "landing_url": "https://proceedings.mlr.press/v235/zhang24o.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/zhang24o/zhang24o.pdf",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/conf/icml/ZhangEF0AB24.html"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "impossibility-boundary",
+        "layered-provenance-rationale"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "NO_FREE_LUNCH_2024",
+      "title": "No Free Lunch in LLM Watermarking: Trade-offs in Watermarking Design Choices",
+      "authors": "Qi Pang, Shengyuan Hu, Wenting Zheng, and Virginia Smith",
+      "year": 2024,
+      "venue": "NeurIPS",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.52202/079017-4402",
+        "arxiv": "2402.16187"
+      },
+      "landing_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/fa86a9c7b9f341716ccb679d1aeb9afa-Abstract-Conference.html",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/fa86a9c7b9f341716ccb679d1aeb9afa-Paper-Conference.pdf",
+      "index_records": [
+        {
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.52202%2F079017-4402"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "trade-off-model",
+        "metric-design"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "SEMSTAMP_2024",
+      "title": "SemStamp: A Semantic Watermark with Paraphrastic Robustness for Text Generation",
+      "authors": "A. Hou et al.",
+      "year": 2024,
+      "venue": "NAACL",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.18653/v1/2024.naacl-long.226"
+      },
+      "landing_url": "https://aclanthology.org/2024.naacl-long.226/",
+      "pdf_url": "https://aclanthology.org/2024.naacl-long.226.pdf",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/conf/naacl/HouZHWCWSDKT24.html"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "semantic-watermark-baseline",
+        "paraphrase-robustness"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "X_SIR_2024",
+      "title": "Can Watermarks Survive Translation? On the Cross-lingual Consistency of Text Watermark for Large Language Models",
+      "authors": "Peisong He et al.",
+      "year": 2024,
+      "venue": "ACL",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.18653/v1/2024.acl-long.226"
+      },
+      "landing_url": "https://aclanthology.org/2024.acl-long.226/",
+      "pdf_url": "https://aclanthology.org/2024.acl-long.226.pdf",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/conf/acl/0002ZHL0T0W24.html"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "translation-attack",
+        "cross-lingual-baseline"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "ADAPTIVE_ATTACKS_2025",
+      "title": "Optimizing Adaptive Attacks against Watermarks for Language Models",
+      "authors": "Abdulrahman Diaa, Toluwani Aremu, and Nils Lukas",
+      "year": 2025,
+      "venue": "ICML / PMLR 267",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "arxiv": "2410.02440",
+        "venue_id": "PMLR-v267-diaa25a"
+      },
+      "landing_url": "https://proceedings.mlr.press/v267/diaa25a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/diaa25a/diaa25a.pdf",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/conf/icml/DiaaAL25.html"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "adaptive-attack-baseline",
+        "query-budget-design"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "WATERMARK_STEALING_2024",
+      "title": "Watermark Stealing in Large Language Models",
+      "authors": "Nikola Jovanovic, Robin Staab, and Martin Vechev",
+      "year": 2024,
+      "venue": "ICML / PMLR 235",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "venue_id": "PMLR-v235-jovanovic24a"
+      },
+      "landing_url": "https://proceedings.mlr.press/v235/jovanovic24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/jovanovic24a/jovanovic24a.pdf",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/conf/icml/JovanovicSV24.html"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "stealing-attack",
+        "spoofing-threat-model"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "SPOOF_DISCOVERY_2025",
+      "title": "Discovering Spoofing Attempts on Language Model Watermarks",
+      "authors": "Thibaud Gloaguen, Nikola Jovanović, Robin Staab, and Martin Vechev",
+      "year": 2025,
+      "venue": "ICML / PMLR 267",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "venue_id": "PMLR-v267-gloaguen25a"
+      },
+      "landing_url": "https://proceedings.mlr.press/v267/gloaguen25a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/gloaguen25a/gloaguen25a.pdf",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/conf/icml/Gloaguen0SV25.html"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "spoof-detection",
+        "forgery-evaluation"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "MCMARK_2025",
+      "title": "Improved Unbiased Watermark for Large Language Models",
+      "authors": "Chen et al.",
+      "year": 2025,
+      "venue": "ACL",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.18653/v1/2025.acl-long.1005",
+        "arxiv": "2502.11268"
+      },
+      "landing_url": "https://aclanthology.org/2025.acl-long.1005/",
+      "pdf_url": "https://aclanthology.org/2025.acl-long.1005.pdf",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/conf/acl/ChenWGH25.html"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "multi-channel-baseline",
+        "unbiasedness-property"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "STEALTHINK_2025",
+      "title": "StealthInk: A Multi-bit and Stealthy Watermark for Large Language Models",
+      "authors": "Ya Jiang, Chuxiong Wu, Massieh Kordi Boroujeny, Brian Mark, and Kai Zeng",
+      "year": 2025,
+      "venue": "ICML / PMLR 267",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "arxiv": "2506.05502",
+        "venue_id": "PMLR-v267-jiang25j"
+      },
+      "landing_url": "https://proceedings.mlr.press/v267/jiang25j.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/jiang25j/jiang25j.pdf",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/conf/icml/JiangWBM025.html"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "robustness-baseline",
+        "efficiency-baseline"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "MIRRORMARK_2026",
+      "title": "MirrorMark: Generalizable Mirrored Sampling for Multi-bit LLM Watermarking",
+      "authors": "Jiang et al.",
+      "year": 2026,
+      "venue": "arXiv preprint v3",
+      "publication_status": "indexed-preprint",
+      "stable_identifier": {
+        "arxiv": "2601.22246v3"
+      },
+      "landing_url": "https://arxiv.org/abs/2601.22246",
+      "pdf_url": "https://arxiv.org/pdf/2601.22246",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/journals/corr/abs-2601-22246.html"
+        }
+      ],
+      "evidence_tier": "watchlist",
+      "admission": "admitted",
+      "admitted_uses": [
+        "novelty-overlap-screen",
+        "exploratory-baseline"
+      ],
+      "notes": "Indexed preprint; do not treat as settled peer-reviewed evidence.",
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "PUBLIC_DETECTION_2024",
+      "title": "Publicly-Detectable Watermarking for Language Models",
+      "authors": "Jaiden Fairoze, Sanjam Garg, Somesh Jha, Saeed Mahloujifar, Mohammad Mahmoody, and Mingyuan Wang",
+      "year": 2025,
+      "venue": "IACR Communications in Cryptology",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.62056/AHMPDKP10",
+        "venue_id": "IACR-2023-1661"
+      },
+      "landing_url": "https://eprint.iacr.org/2023/1661",
+      "pdf_url": "https://eprint.iacr.org/2023/1661.pdf",
+      "index_records": [
+        {
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.62056%2FAHMPDKP10"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "public-verification-baseline",
+        "cryptographic-design"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "WATERSEEKER_2025",
+      "title": "WaterSeeker: Pioneering Efficient Detection of Watermarked Segments in Large Documents",
+      "authors": "Leyi Pan, Aiwei Liu, Yijian Lu, Zitian Gao, Yichen Di, Lijie Wen, Irwin King, and Philip S. Yu",
+      "year": 2025,
+      "venue": "Findings of NAACL",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.18653/v1/2025.findings-naacl.156"
+      },
+      "landing_url": "https://aclanthology.org/2025.findings-naacl.156/",
+      "pdf_url": "https://aclanthology.org/2025.findings-naacl.156.pdf",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/conf/naacl/PanLLGDWKY25.html"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "localization-baseline",
+        "long-document-evaluation"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "MIXED_SEGMENTS_2025",
+      "title": "Efficiently Identifying Watermarked Segments in Mixed-Source Texts",
+      "authors": "Xuandong Zhao, Chenwen Liao, Yu-Xiang Wang, and Lei Li",
+      "year": 2025,
+      "venue": "ACL",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.18653/v1/2025.acl-long.316"
+      },
+      "landing_url": "https://aclanthology.org/2025.acl-long.316/",
+      "pdf_url": "https://aclanthology.org/2025.acl-long.316.pdf",
+      "index_records": [
+        {
+          "provider": "OpenAlex",
+          "url": "https://openalex.org/W4412945560"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "mixed-source-localization",
+        "span-metrics"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "COLLISION_2025",
+      "title": "Lost in Overlap: Exploring Logit-based Watermark Collision in LLMs",
+      "authors": "Luo et al.",
+      "year": 2025,
+      "venue": "Findings of NAACL",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.18653/v1/2025.findings-naacl.37"
+      },
+      "landing_url": "https://aclanthology.org/2025.findings-naacl.37/",
+      "pdf_url": "https://aclanthology.org/2025.findings-naacl.37.pdf",
+      "index_records": [
+        {
+          "provider": "OpenAlex",
+          "url": "https://openalex.org/W4411112906"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "collision-baseline",
+        "multi-provider-threat-model"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "CROSS_LINGUAL_2025",
+      "title": "Evaluating the Robustness and Accuracy of Text Watermarking Under Real-World Cross-Lingual Manipulations",
+      "authors": "Mansour Al Ghanim, Jiaqi Xue, Rochana Prih Hastuti, Mengxin Zheng, Yan Solihin, and Qian Lou",
+      "year": 2025,
+      "venue": "Findings of EMNLP",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.18653/v1/2025.findings-emnlp.390"
+      },
+      "landing_url": "https://aclanthology.org/2025.findings-emnlp.390/",
+      "pdf_url": "https://aclanthology.org/2025.findings-emnlp.390.pdf",
+      "index_records": [
+        {
+          "provider": "Crossref",
+          "url": "https://api.crossref.org/works/10.18653%2Fv1%2F2025.findings-emnlp.390"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "cross-lingual-evaluation",
+        "translation-attack"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "WATERPARK_2025",
+      "title": "Watermark under Fire: A Robustness Evaluation of LLM Watermarking",
+      "authors": "Liu et al.",
+      "year": 2025,
+      "venue": "Findings of EMNLP",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.18653/v1/2025.findings-emnlp.1148"
+      },
+      "landing_url": "https://aclanthology.org/2025.findings-emnlp.1148/",
+      "pdf_url": "https://aclanthology.org/2025.findings-emnlp.1148.pdf",
+      "index_records": [
+        {
+          "provider": "OpenAlex",
+          "url": "https://openalex.org/W4416033951"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "benchmark-design",
+        "attack-taxonomy",
+        "method-coverage"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "TOKENIZATION_2025",
+      "title": "Addressing Tokenization Inconsistency in Steganography and Watermarking Based on Large Language Models",
+      "authors": "Ruiyi Yan and Yugo Murawaki",
+      "year": 2025,
+      "venue": "EMNLP",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.18653/v1/2025.emnlp-main.361"
+      },
+      "landing_url": "https://aclanthology.org/2025.emnlp-main.361/",
+      "pdf_url": "https://aclanthology.org/2025.emnlp-main.361.pdf",
+      "index_records": [
+        {
+          "provider": "OpenAlex",
+          "url": "https://openalex.org/W4416036975"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "tokenizer-fidelity",
+        "serving-stack-evaluation"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "HUMAN_EDITS_2025",
+      "title": "Robust Detection of Watermarks for Large Language Models Under Human Edits",
+      "authors": "Xiang Li, Feng Ruan, Huiyuan Wang, Qi Long, and Weijie J. Su",
+      "year": 2025,
+      "venue": "Journal of the Royal Statistical Society Series B",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.1093/jrsssb/qkaf056",
+        "arxiv": "2411.13868"
+      },
+      "landing_url": "https://academic.oup.com/jrsssb/article/87/4/1233/8151301",
+      "pdf_url": "https://arxiv.org/pdf/2411.13868",
+      "index_records": [
+        {
+          "provider": "OpenAlex",
+          "url": "https://openalex.org/W4414453530"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "robust-detection",
+        "human-edit-evaluation"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "STAT_FRAMEWORK_2024",
+      "title": "A Statistical Framework of Watermarks for Large Language Models: Pivot, Detection Efficiency and Optimal Rules",
+      "authors": "Xiang Li, Feng Ruan, Huiyuan Wang, Qi Long, and Weijie J. Su",
+      "year": 2025,
+      "venue": "The Annals of Statistics",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.1214/24-AOS2468",
+        "arxiv": "2404.01245"
+      },
+      "landing_url": "https://arxiv.org/abs/2404.01245",
+      "pdf_url": "https://arxiv.org/pdf/2404.01245",
+      "index_records": [
+        {
+          "provider": "OpenAlex",
+          "url": "https://openalex.org/W4407557405"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "statistical-foundation",
+        "optimal-test-design"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "ANYTIME_VALID_2026",
+      "title": "Towards Anytime-Valid Statistical Watermarking",
+      "authors": "Baihe Huang, Eric Xu, Kannan Ramchandran, Jiantao Jiao, and Michael I. Jordan",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "publication_status": "indexed-preprint",
+      "stable_identifier": {
+        "arxiv": "2602.17608"
+      },
+      "landing_url": "https://arxiv.org/abs/2602.17608",
+      "pdf_url": "https://arxiv.org/pdf/2602.17608",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/journals/corr/abs-2602-17608.html"
+        }
+      ],
+      "evidence_tier": "watchlist",
+      "admission": "admitted",
+      "admitted_uses": [
+        "optional-stopping-overlap",
+        "novelty-screen"
+      ],
+      "notes": "Indexed preprint; use for overlap analysis and exploratory design only.",
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "WATERBENCH_2024",
+      "title": "WaterBench: Towards Holistic Evaluation of Watermarks for Large Language Models",
+      "authors": "Tu et al.",
+      "year": 2024,
+      "venue": "ACL",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.18653/v1/2024.acl-long.83"
+      },
+      "landing_url": "https://aclanthology.org/2024.acl-long.83/",
+      "pdf_url": "https://aclanthology.org/2024.acl-long.83.pdf",
+      "index_records": [
+        {
+          "provider": "OpenAlex",
+          "url": "https://openalex.org/W4402672097"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "benchmark-design",
+        "quality-metrics"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "DUWAK_2024",
+      "title": "Duwak: Dual Watermarks in Large Language Models",
+      "authors": "Zhu et al.",
+      "year": 2024,
+      "venue": "Findings of ACL",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.18653/v1/2024.findings-acl.678"
+      },
+      "landing_url": "https://aclanthology.org/2024.findings-acl.678/",
+      "pdf_url": "https://aclanthology.org/2024.findings-acl.678.pdf",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/conf/acl/ZhuGCC24.html"
+        }
+      ],
+      "evidence_tier": "core",
+      "admission": "admitted",
+      "admitted_uses": [
+        "dual-watermark-overlap",
+        "novelty-screen"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "PROVENANCE_SURVEY_2023",
+      "title": "Data Provenance in Security and Privacy",
+      "authors": "Bofeng Pan, Natalia Stakhanova, and Suprio Ray",
+      "year": 2023,
+      "venue": "ACM Computing Surveys",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.1145/3593294"
+      },
+      "landing_url": "https://dl.acm.org/doi/10.1145/3593294",
+      "pdf_url": "https://cyberlab.usask.ca/papers/ACMSurvey23.pdf",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/journals/csur/PanSR23.html"
+        }
+      ],
+      "evidence_tier": "adjacent",
+      "admission": "admitted",
+      "admitted_uses": [
+        "provenance-architecture",
+        "evidence-model"
+      ],
+      "checked_at": "2026-08-14"
+    },
+    {
+      "record_id": "SECURE_AGGREGATION_2017",
+      "title": "Practical Secure Aggregation for Privacy-Preserving Machine Learning",
+      "authors": "Keith Bonawitz et al.",
+      "year": 2017,
+      "venue": "ACM CCS",
+      "publication_status": "peer-reviewed",
+      "stable_identifier": {
+        "doi": "10.1145/3133956.3133982"
+      },
+      "landing_url": "https://eprint.iacr.org/2017/281",
+      "pdf_url": "https://eprint.iacr.org/2017/281.pdf",
+      "index_records": [
+        {
+          "provider": "DBLP",
+          "url": "https://dblp.org/rec/conf/ccs/BonawitzIKMMPRS17.html"
+        }
+      ],
+      "evidence_tier": "adjacent",
+      "admission": "admitted",
+      "admitted_uses": [
+        "federated-calibration-design",
+        "privacy-threat-model"
+      ],
+      "checked_at": "2026-08-14"
+    }
+  ]
+}

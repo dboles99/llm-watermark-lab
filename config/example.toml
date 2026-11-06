@@ -1,0 +1,55 @@
+[application]
+database_url = "postgresql+psycopg://watermark_lab:CHANGE_ME@localhost:5432/watermark_lab"
+artifact_root = "project/artifacts"
+default_language = "en"
+supported_languages = ["en", "zh-Hant-TW"]
+
+[localization]
+canonical_traditional_chinese = "zh-Hant-TW"
+accepted_aliases = ["zh-TW"]
+traditional_chinese_fallback = ["zh-Hant-TW", "zh-TW", "zh-Hant", "en"]
+forbidden_fallbacks = ["zh-CN", "zh-Hans", "zh-Hans-CN"]
+
+[research]
+execution_profile = "workstation-api-first"
+execution_target = "api-first-hybrid"
+selectable_features = ["edit-receipt", "polymark-demixing", "robust-fragile", "translingua-tw"]
+payload_identity_mode = "pseudonymous-project-workflow"
+proof_backend = "tee-simulator"
+proof_sequence = ["tee-simulator", "remote-tee", "zero-knowledge"]
+
+[model_endpoints.kimi27]
+base_url = "http://localhost:11434/v1"
+model = "kimi2.7"
+api_key_env = "OLLAMA_API_KEY"
+
+[model_endpoints.glm52]
+base_url = "http://localhost:11434/v1"
+model = "glm5.2"
+api_key_env = "OLLAMA_API_KEY"
+
+[model_endpoints.gpt56_luna]
+provider = "azure_openai"
+endpoint_env = "AZURE_OPENAI_ENDPOINT"
+deployment = "gpt-5.6-luna"
+api_version = "CONFIGURE_AT_DEPLOYMENT"
+api_key_env = "AZURE_OPENAI_API_KEY"
+
+[model_endpoints.kimi27_code]
+provider = "openai_compatible"
+base_url = "http://localhost:11434/v1"
+model = "kimi2.7-code"
+api_key_env = "OLLAMA_API_KEY"
+
+[model_endpoints.mock_claude]
+provider = "mock_anthropic_shape"
+base_url = "http://localhost:8099"
+model = "mock-claude-watermark-lab"
+api_key_env = "MOCK_PROVIDER_API_KEY"
+simulated = true
+
+[governance]
+allow_third_party_documents = false
+allow_existing_text_rewatermarking = false
+require_disclosure = true
+provider_attribution = false

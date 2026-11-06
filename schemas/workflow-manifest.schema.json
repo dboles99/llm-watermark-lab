@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llm-watermark-lab.example/schemas/workflow-manifest-v1.json",
+  "title": "LLM Watermark Lab Workflow Manifest",
+  "type": "object",
+  "required": ["schema_version", "workflow_id", "canonical_evidence_root", "orchestration", "artifact_history", "locale_policy", "status_definitions", "tasks"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "const": "1.0.0" },
+    "workflow_id": { "type": "string", "minLength": 1 },
+    "canonical_evidence_root": { "const": "project/artifacts/" },
+    "runtime_output_root": { "const": "artifacts/" },
+    "orchestration": {
+      "type": "object",
+      "required": ["strategy", "canonical_state_writer", "rosettas_are_model_neutral", "execution_metadata_required"],
+      "properties": {
+        "strategy": { "const": "sol-first-independent-passes" },
+        "canonical_state_writer": { "const": "root-orchestrator" },
+        "rosettas_are_model_neutral": { "const": true },
+        "execution_metadata_required": { "const": true },
+        "heterogeneous_review_required_for": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    },
+    "artifact_history": {
+      "type": "object",
+      "required": ["default_mode", "modes", "frozen_artifact_policy"],
+      "properties": {
+        "default_mode": { "const": "supersede" },
+        "modes": { "type": "array", "items": { "enum": ["supersede", "amend-in-place"] }, "minItems": 2, "uniqueItems": true },
+        "frozen_artifact_policy": { "const": "supersede-only" }
+      },
+      "additionalProperties": false
+    },
+    "locale_policy": {
+      "type": "object",
+      "required": ["canonical_traditional_chinese", "accepted_aliases", "fallback_chain", "forbidden_fallbacks"],
+      "properties": {
+        "canonical_traditional_chinese": { "const": "zh-Hant-TW" },
+        "accepted_aliases": { "type": "array", "items": { "enum": ["zh-Hant-TW", "zh-TW"] }, "uniqueItems": true },
+        "fallback_chain": {
+          "type": "array",
+          "prefixItems": [{ "const": "zh-Hant-TW" }, { "const": "zh-TW" }, { "const": "zh-Hant" }, { "const": "en" }],
+          "items": false
+        },
+        "forbidden_fallbacks": { "type": "array", "contains": { "const": "zh-CN" } }
+      },
+      "additionalProperties": false
+    },
+    "status_definitions": {
+      "type": "object",
+      "required": ["task", "adapter"],
+      "properties": {
+        "task": { "type": "array", "items": { "enum": ["not-started", "in-progress", "blocked", "vertical-slice-complete-promotion-pending-re-review", "completed"] }, "uniqueItems": true },
+        "adapter": { "type": "array", "items": { "enum": ["specification", "prototype", "experimental", "reproduced", "verified-compatible"] }, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    },
+    "tasks": { "type": "array", "items": { "$ref": "#/$defs/task" }, "minItems": 1 }
+  },
+  "$defs": {
+    "task": {
+      "type": "object",
+      "required": ["task_id", "name", "status", "task_document", "steps"],
+      "properties": {
+        "task_id": { "pattern": "^T[0-9]{2}$" },
+        "name": { "type": "string", "minLength": 1 },
+        "status": { "enum": ["not-started", "in-progress", "blocked", "vertical-slice-complete-promotion-pending-re-review", "completed"] },
+        "task_document": { "type": "string" },
+        "promotion_note": { "type": "string" },
+        "steps": { "type": "array", "items": { "$ref": "#/$defs/step" }, "minItems": 1 }
+      },
+      "additionalProperties": false
+    },
+    "step": {
+      "type": "object",
+      "required": ["step_id", "name", "rosettas", "gate"],
+      "properties": {
+        "step_id": { "pattern": "^step-[0-9]{2}-[a-z0-9-]+$" },
+        "name": { "type": "string", "minLength": 1 },
+        "rosettas": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "gate": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

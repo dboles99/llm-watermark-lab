@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llm-watermark-lab.example/schemas/artifact-amendment-v1.json",
+  "title": "LLM Watermark Lab Artifact History Event",
+  "type": "object",
+  "required": ["schema_version", "event_id", "mode", "created_at", "created_by", "reason", "target"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "const": "1.0.0" },
+    "event_id": { "type": "string", "minLength": 1 },
+    "mode": { "enum": ["supersede", "amend-in-place"] },
+    "created_at": { "type": "string", "format": "date-time" },
+    "created_by": { "type": "string", "minLength": 1 },
+    "reason": { "type": "string", "minLength": 1 },
+    "target": {
+      "type": "object",
+      "required": ["artifact_id", "path", "sha256_before", "frozen"],
+      "properties": {
+        "artifact_id": { "type": "string", "minLength": 1 },
+        "path": { "type": "string", "pattern": "^project/artifacts/" },
+        "sha256_before": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "frozen": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "replacement": {
+      "type": "object",
+      "required": ["artifact_id", "path", "sha256"],
+      "properties": {
+        "artifact_id": { "type": "string", "minLength": 1 },
+        "path": { "type": "string", "pattern": "^project/artifacts/" },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      },
+      "additionalProperties": false
+    },
+    "sha256_after": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "amendment_log_path": { "type": "string", "pattern": "^project/artifacts/" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "mode": { "const": "supersede" } }, "required": ["mode"] },
+      "then": { "required": ["replacement"], "not": { "required": ["sha256_after"] } }
+    },
+    {
+      "if": { "properties": { "mode": { "const": "amend-in-place" } }, "required": ["mode"] },
+      "then": {
+        "required": ["sha256_after", "amendment_log_path"],
+        "properties": { "target": { "properties": { "frozen": { "const": false } } } },
+        "not": { "required": ["replacement"] }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

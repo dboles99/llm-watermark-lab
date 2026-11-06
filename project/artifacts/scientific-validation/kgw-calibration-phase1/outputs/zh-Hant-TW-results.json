@@ -1,0 +1,39 @@
+{
+  "e1_fpr": {
+    "variant": "masked-first-full-ngram-only (confirmatory)",
+    "independent_units": "author-document clusters",
+    "n_clusters": 40,
+    "n_documents": 200,
+    "false_positive_clusters": 0,
+    "empirical_fpr": 0.0,
+    "cp_upper_95": 0.07215752450551453,
+    "cp_upper_bonferroni_97_5": 0.08809730287880237
+  },
+  "e2_paired": {
+    "variant": "paired cluster-level masked vs naive (exact McNemar; Deviation #2)",
+    "n_clusters": 40,
+    "masked_false_positive_clusters": 0,
+    "naive_false_positive_clusters": 0,
+    "discordant_naive_only": 0,
+    "discordant_masked_only": 0,
+    "mcnemar_exact_two_sided_p": null,
+    "masked_marginal_cp_upper_95": 0.07215752450551453,
+    "naive_marginal_cp_upper_95": 0.07215752450551453
+  },
+  "e3_tpr": {
+    "n_independent_positives": 40,
+    "detected": 40,
+    "empirical_tpr": 1.0,
+    "cp_two_sided_95": {
+      "lower": 0.9119026971211976,
+      "upper": 1.0
+    }
+  },
+  "e4_descriptive_f3": {
+    "masked_z_mean": -0.027016094790041877,
+    "masked_z_min": -1.5961637426866133,
+    "masked_z_median": -0.04113450348948636,
+    "masked_z_max": 2.138089935299395,
+    "mean_token_count": 352.24
+  }
+}

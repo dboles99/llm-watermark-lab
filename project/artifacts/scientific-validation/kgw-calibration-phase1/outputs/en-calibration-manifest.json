@@ -1,0 +1,83 @@
+{
+  "$schema": "../../../schemas/calibration-manifest.schema.json",
+  "schema_version": "1.0.0",
+  "calibration_id": "cal_prereg-kgw-cal-phase1-v1-en",
+  "status": "draft",
+  "method": {
+    "method_id": "kgw",
+    "implementation_id": "kgw-author-simple1-torch-2.13.0-cpu-win-amd64-v1",
+    "implementation_sha256": "8ef711c9fa2f51b0bbf3272eafc673ad439ece5d06d68edd79f4793631f1ced9",
+    "author_repository_url": "https://github.com/jwkirchenbauer/lm-watermarking",
+    "author_commit": "82922516930c02f8aa322765defdb5863d07a00e",
+    "parity_status": "passed",
+    "parity_report_sha256": "ba9e41c3e9e43da1f95ce3eb4c1a61a53bd5b9b3879dfc8c85832edfbbd3b2f9"
+  },
+  "tokenizer": {
+    "tokenizer_id": "openai-community/gpt2",
+    "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+    "asset_sha256": "cc2a1328bb47f72377dbcde5e6e68bcf8efa6c3daa030ff1162593abf48041f6",
+    "normalization": "none-preserve-whitespace-no-locale-fallback-v1",
+    "bos_policy": "exclude",
+    "eos_policy": "exclude",
+    "special_token_policy": "exclude"
+  },
+  "locale": "en",
+  "locale_fallback_order": [
+    "zh-Hant-TW",
+    "zh-TW",
+    "zh-Hant",
+    "en"
+  ],
+  "partitions": [
+    {
+      "role": "development",
+      "partition_id": "prereg-kgw-cal-phase1-v1:en:development",
+      "manifest_sha256": "e14536cb1e7e35ce4d02f1bc57c8efaeed019f8499d59df6fecbb977a7bcd0e8"
+    },
+    {
+      "role": "calibration",
+      "partition_id": "prereg-kgw-cal-phase1-v1:en:calibration",
+      "manifest_sha256": "9c83eed4abeda51fae3f8a15ed1550eced06366788978d39376918995458b494"
+    },
+    {
+      "role": "attack-tuning",
+      "partition_id": "prereg-kgw-cal-phase1-v1:en:attack-tuning",
+      "manifest_sha256": "3435ab5f54d55ac8885f4d7b27d0eb683c3d1d9df42b6df8f65a3472c15fe680"
+    },
+    {
+      "role": "final-locked",
+      "partition_id": "prereg-kgw-cal-phase1-v1:en:final-locked",
+      "manifest_sha256": "8df06316fdcc198bef7d82f0341d7623d39f2b03867f16978e11457bbcc52215"
+    }
+  ],
+  "sampling": {
+    "independent_unit": "author-document-cluster",
+    "planned_independent_negatives": 40,
+    "planned_independent_positives": 40,
+    "cluster_fields": [
+      "source_id",
+      "document_id"
+    ],
+    "stopping_rule": "Fixed-sample: all calibration clusters scored once; no sequential or optional stopping (preregistration section 5.4).",
+    "exclusion_policy_sha256": "4defe9c16ea379a6ec7c752e6285937a4959a0cc7b71db90e8fbc46664e7a264"
+  },
+  "scoring": {
+    "gamma": 0.25,
+    "context_width": 1,
+    "seeding_scheme": "simple_1",
+    "repeated_ngram_policy": "first-full-ngram-only",
+    "minimum_scored_tokens": 1,
+    "decision_threshold": 4.0
+  },
+  "inference": {
+    "target_fpr": 0.005,
+    "confidence_level": 0.95,
+    "false_positive_interval": "clopper-pearson-exact-one-sided-upper",
+    "true_positive_interval": "clopper-pearson-exact-two-sided",
+    "claim_basis": "estimated-rate",
+    "multiplicity_family_id": "F1",
+    "multiplicity_policy": "bonferroni",
+    "analysis_code_sha256": "427ce8050e20eb3dd7f85367254ecb3b4ec582f9c35046dad3976380265f8584"
+  },
+  "created_at": "2026-08-15T00:46:07.897690Z"
+}

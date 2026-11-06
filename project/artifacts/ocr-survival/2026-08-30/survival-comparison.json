@@ -1,0 +1,242 @@
+{
+  "artifact_type": "ocr-survival-comparison",
+  "generated_at": "2026-08-30",
+  "promotion_status": "NON-PROMOTABLE. No OCR-specific calibration null is frozen for this engine profile, locale, or degradation level, so a surviving detector score is evidence about signal degradation, not a calibrated detection. No false-positive rate is implied.",
+  "question": "Does a statistical, logit-biased watermark survive a print-scan-OCR round trip that destroys every container-bound provenance channel?",
+  "generation": {
+    "model_id": "openai-community/gpt2",
+    "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+    "weights_sha256": "8b45929d1a787444af6709cb597337eee030e203846ea02e3a704d53635811d1",
+    "tokenizer_files_sha256": "9c32c8e5bb2ef9370eeda8724c312f01b090e5a3eedbd12a01e91d0c16eeb5c0",
+    "watermarking_config": {
+      "greenlist_ratio": 0.25,
+      "bias": 2.0,
+      "hashing_key": 15485863,
+      "seeding_scheme": "lefthash",
+      "context_width": 1
+    },
+    "seed": 11,
+    "new_token_count": 180,
+    "text_sha256": "194f56ca9ab6db7aa54360effe1ea553338297333470873467c2ae7edbfbac9f",
+    "torch": "2.13.0+cpu",
+    "transformers": "5.15.0"
+  },
+  "ocr_engine": {
+    "engine_id": "rapidocr",
+    "engine_version": "1.2.3",
+    "language": "auto",
+    "assets": [
+      {
+        "name": "models/ch_PP-OCRv3_det_infer.onnx",
+        "sha256": "3439588c030faea393a54515f51e983d8e155b19a2e8aba7891934c1cf0de526",
+        "size_bytes": 2432880
+      },
+      {
+        "name": "models/ch_PP-OCRv3_rec_infer.onnx",
+        "sha256": "897a3ededb38fee0dae2c1ccee38241f37df202c9509e3abca02e9217c5ee615",
+        "size_bytes": 10690752
+      },
+      {
+        "name": "models/ch_ppocr_mobile_v2.0_cls_infer.onnx",
+        "sha256": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c",
+        "size_bytes": 585532
+      }
+    ],
+    "aggregate_sha256": "5ea1eee20e6c6a137fd5c6d101990d059ad23cdbb88bf91d275b7d115328997f",
+    "parameters": {}
+  },
+  "render_settings": {
+    "font_path": "arial.ttf",
+    "font_name": "arial.ttf",
+    "font_sha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+    "font_size": 30,
+    "dpi": 300,
+    "page_width": 1654,
+    "margin": 96,
+    "line_spacing": 1.5,
+    "background": "white",
+    "foreground": "black",
+    "warnings": []
+  },
+  "content_bound_arm": {
+    "channel": "statistical KGW watermark (author defaults) in token selection",
+    "cells": [
+      {
+        "degradation": {
+          "name": "clean",
+          "severity": 0.0,
+          "seed": 3
+        },
+        "character_error_rate": 0.1285878300803674,
+        "word_error_rate": 0.11409395973154363,
+        "token_error_rate": 0.20212765957446807,
+        "reference_tokens": 188,
+        "recovered_tokens": 167,
+        "reference_score": 9.668387578085154,
+        "recovered_score": null,
+        "reference_detected": true,
+        "recovered_detected": null,
+        "score_retained": null,
+        "coverage_ratio": 0.8760045924225028,
+        "detection_dropout": true,
+        "context_width": 1,
+        "predicted_corruption": 0.40425531914893614,
+        "warnings": [
+          "The bundled ch_PP-OCRv3 models are trained principally on Simplified Chinese and Latin script. Traditional Chinese accuracy is unmeasured here and must not be assumed; recognised zh output requires Simplified-form contamination screening.",
+          "detector dropout: recovered text is far shorter than the reference, so this cell measures a detection failure rather than watermark degradation"
+        ]
+      },
+      {
+        "degradation": {
+          "name": "jpeg",
+          "severity": 0.6,
+          "seed": 3
+        },
+        "character_error_rate": 0.013777267508610792,
+        "word_error_rate": 0.03355704697986577,
+        "token_error_rate": 0.10106382978723404,
+        "reference_tokens": 188,
+        "recovered_tokens": 191,
+        "reference_score": 9.668387578085154,
+        "recovered_score": 8.29330738417557,
+        "reference_detected": true,
+        "recovered_detected": true,
+        "score_retained": 0.8577756443042882,
+        "coverage_ratio": 0.9919632606199771,
+        "detection_dropout": false,
+        "context_width": 1,
+        "predicted_corruption": 0.20212765957446807,
+        "warnings": [
+          "The bundled ch_PP-OCRv3 models are trained principally on Simplified Chinese and Latin script. Traditional Chinese accuracy is unmeasured here and must not be assumed; recognised zh output requires Simplified-form contamination screening."
+        ]
+      },
+      {
+        "degradation": {
+          "name": "downsample",
+          "severity": 0.5,
+          "seed": 3
+        },
+        "character_error_rate": 0.010332950631458095,
+        "word_error_rate": 0.0,
+        "token_error_rate": 0.0851063829787234,
+        "reference_tokens": 188,
+        "recovered_tokens": 191,
+        "reference_score": 9.668387578085154,
+        "recovered_score": 8.460848947492249,
+        "reference_detected": true,
+        "recovered_detected": true,
+        "score_retained": 0.8751044451993244,
+        "coverage_ratio": 0.9954075774971297,
+        "detection_dropout": false,
+        "context_width": 1,
+        "predicted_corruption": 0.1702127659574468,
+        "warnings": [
+          "The bundled ch_PP-OCRv3 models are trained principally on Simplified Chinese and Latin script. Traditional Chinese accuracy is unmeasured here and must not be assumed; recognised zh output requires Simplified-form contamination screening."
+        ]
+      },
+      {
+        "degradation": {
+          "name": "noise",
+          "severity": 0.5,
+          "seed": 3
+        },
+        "character_error_rate": 0.011481056257175661,
+        "word_error_rate": 0.006711409395973154,
+        "token_error_rate": 0.0851063829787234,
+        "reference_tokens": 188,
+        "recovered_tokens": 190,
+        "reference_score": 9.668387578085154,
+        "recovered_score": 8.693182879212227,
+        "reference_detected": true,
+        "recovered_detected": true,
+        "score_retained": 0.8991347118641194,
+        "coverage_ratio": 0.9942594718714122,
+        "detection_dropout": false,
+        "context_width": 1,
+        "predicted_corruption": 0.1702127659574468,
+        "warnings": [
+          "The bundled ch_PP-OCRv3 models are trained principally on Simplified Chinese and Latin script. Traditional Chinese accuracy is unmeasured here and must not be assumed; recognised zh output requires Simplified-form contamination screening."
+        ]
+      },
+      {
+        "degradation": {
+          "name": "paper",
+          "severity": 0.5,
+          "seed": 3
+        },
+        "character_error_rate": 0.011481056257175661,
+        "word_error_rate": 0.006711409395973154,
+        "token_error_rate": 0.0851063829787234,
+        "reference_tokens": 188,
+        "recovered_tokens": 190,
+        "reference_score": 9.668387578085154,
+        "recovered_score": 8.693182879212227,
+        "reference_detected": true,
+        "recovered_detected": true,
+        "score_retained": 0.8991347118641194,
+        "coverage_ratio": 0.9942594718714122,
+        "detection_dropout": false,
+        "context_width": 1,
+        "predicted_corruption": 0.1702127659574468,
+        "warnings": [
+          "The bundled ch_PP-OCRv3 models are trained principally on Simplified Chinese and Latin script. Traditional Chinese accuracy is unmeasured here and must not be assumed; recognised zh output requires Simplified-form contamination screening."
+        ]
+      }
+    ],
+    "summary": {
+      "cells": 5,
+      "usable_cells": 4,
+      "detection_dropout_cells": 1,
+      "scored_cells": 4,
+      "surviving_cells": 4,
+      "survival_rate": 1.0,
+      "reference_detected": true,
+      "context_width": 1,
+      "mean_score_retained": 0.8827873783079628,
+      "character_error_rate": {
+        "min": 0.010332950631458095,
+        "max": 0.013777267508610792
+      },
+      "token_error_rate": {
+        "min": 0.0851063829787234,
+        "max": 0.10106382978723404
+      },
+      "not_calibrated": "No OCR-specific calibration null is frozen for this engine profile, locale, or degradation level. A surviving detector score is evidence about signal degradation, not a calibrated detection, and no false-positive rate is implied."
+    }
+  },
+  "container_bound_arm": {
+    "channels": "zero-width unicode and whitespace encodings",
+    "summary": {
+      "cells": 5,
+      "usable_cells": 4,
+      "detection_dropout_cells": 1,
+      "engine_id": "rapidocr",
+      "profile_fingerprint": "5ea1eee20e6c6a137fd5c6d101990d059ad23cdbb88bf91d275b7d115328997f",
+      "character_error_rate": {
+        "min": 0.010332950631458095,
+        "max": 0.013777267508610792,
+        "mean": 0.011768082663605052
+      },
+      "channels": {
+        "unicode": {
+          "channel_class": "container-bound",
+          "embedded_cells": 5,
+          "surviving_cells": 0,
+          "survival_rate": 0.0
+        },
+        "whitespace": {
+          "channel_class": "container-bound",
+          "embedded_cells": 5,
+          "surviving_cells": 0,
+          "survival_rate": 0.0
+        },
+        "token_choice": {
+          "channel_class": "content-bound",
+          "embedded_cells": 0,
+          "surviving_cells": 0,
+          "survival_rate": null
+        }
+      }
+    }
+  }
+}

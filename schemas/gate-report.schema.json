@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llm-watermark-lab.example/schemas/gate-report-v2.json",
+  "title": "LLM Watermark Lab Gate Report",
+  "type": "object",
+  "description": "Version 2 separates evidence production from review, promotion, and deployment. Historical gate reports are preserved rather than silently rewritten.",
+  "required": ["schema_version", "gate_id", "task_id", "step_id", "status", "artifact_complete", "checks_passed", "promotion_eligible", "deployment_ready", "checks", "summary"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "const": "2.0.0" },
+    "gate_id": { "type": "string", "minLength": 1 },
+    "task_id": { "pattern": "^T[0-9]{2}$" },
+    "step_id": { "type": ["string", "null"] },
+    "status": { "enum": ["completed", "failed", "blocked", "pending", "superseded"] },
+    "artifact_complete": { "type": "boolean" },
+    "checks_passed": { "type": "boolean" },
+    "promotion_eligible": { "type": "boolean" },
+    "deployment_ready": { "type": "boolean" },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["check_id", "status", "evidence"],
+        "properties": {
+          "check_id": { "type": "string", "minLength": 1 },
+          "status": { "enum": ["passed", "failed", "pending", "not-applicable"] },
+          "evidence": { "type": "array", "items": { "type": "string" } },
+          "command": { "type": ["string", "null"] },
+          "notes": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "finding_ids": { "type": "array", "items": { "type": "string" } },
+    "disposition": { "type": "string" },
+    "blockers": { "type": "array", "items": { "type": "string" } },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "summary": { "type": "string", "minLength": 1 },
+    "supersedes_gate_report": { "type": ["string", "null"] }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "checks_passed": { "const": true } }, "required": ["checks_passed"] },
+      "then": { "properties": { "checks": { "not": { "contains": { "properties": { "status": { "enum": ["failed", "pending"] } }, "required": ["status"] } } } } }
+    },
+    {
+      "if": { "properties": { "promotion_eligible": { "const": true } }, "required": ["promotion_eligible"] },
+      "then": { "properties": { "artifact_complete": { "const": true }, "checks_passed": { "const": true } } }
+    },
+    {
+      "if": { "properties": { "deployment_ready": { "const": true } }, "required": ["deployment_ready"] },
+      "then": { "properties": { "promotion_eligible": { "const": true } } }
+    }
+  ],
+  "additionalProperties": false
+}

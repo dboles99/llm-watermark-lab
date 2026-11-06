@@ -1,0 +1,63 @@
+{
+  "method_id": "kgw",
+  "vector_id": "kgw-v1-hello-context",
+  "description": "Deterministic internal KGW mechanics values for the project's Python-RNG profile. This is not an author-code oracle.",
+  "key": "TEST_KEY_KGW_V1",
+  "hash_key": 15485863,
+  "vocab_size": 50257,
+  "gamma": 0.25,
+  "delta": 2.0,
+  "context_width": 1,
+  "seeding_scheme": "simple_1",
+  "green_size_rule": "truncate",
+  "prev_token": 15496,
+  "seed": 239968933048,
+  "green_size": 12564,
+  "green_list_first_20": [
+    3,
+    9,
+    12,
+    22,
+    23,
+    31,
+    37,
+    40,
+    41,
+    45,
+    56,
+    64,
+    67,
+    85,
+    86,
+    91,
+    92,
+    93,
+    95,
+    106
+  ],
+  "tokens": [
+    15496,
+    3,
+    4,
+    12,
+    9
+  ],
+  "green_token_mask": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "green_count": 2,
+  "T": 4,
+  "z_score": 1.1547005383792517,
+  "p_value_one_sided": 0.12410653949496178,
+  "_reference_implementation": {
+    "language": "Python 3",
+    "libraries": "stdlib only (random, math)",
+    "note": "This fixture intentionally follows Python random.Random.shuffle. It must differ from the pinned author profile, which uses device-bound torch.Generator plus torch.randperm. Author-code oracle values live in kgw_author_torch_2_13_cpu_win_amd64.json.",
+    "seed_formula": "seed = (hash_key * prev_token) % (2**64 - 1)",
+    "green_list_formula": "rng = random.Random(seed); ids = list(range(vocab_size)); rng.shuffle(ids); green_list = sorted(ids[:green_size])",
+    "detection_formula": "For t in range(context_width, len(tokens)): context = tokens[t-context_width:t]; G_t = green_list(context); green_count += tokens[t] in G_t; T += 1. z = (green_count - gamma*T) / sqrt(gamma*(1-gamma)*T); p = 1 - Phi(z)."
+  }
+}

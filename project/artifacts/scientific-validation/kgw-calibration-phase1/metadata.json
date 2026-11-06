@@ -1,0 +1,18 @@
+{
+  "study_id": "prereg-kgw-cal-phase1-v1",
+  "gate_id": "t06-kgw-calibration-phase1-synthetic-pilot-v1",
+  "executed_at": "2026-08-15T00:46:10.641105Z",
+  "git_commit": "afa2eee1a1ae8a5c0b3ba52268f78afe24c9e20d",
+  "working_tree_dirty": true,
+  "environment": {
+    "python": "3.14.4",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "machine": "AMD64",
+    "torch": "2.13.0+cpu",
+    "transformers": "5.15.0",
+    "tokenizers": "0.22.2",
+    "huggingface_hub": "1.27.0"
+  },
+  "analysis_code_sha256": "427ce8050e20eb3dd7f85367254ecb3b4ec582f9c35046dad3976380265f8584",
+  "preregistration": "docs/research/PREREGISTRATION_KGW_PHASE1.md"
+}

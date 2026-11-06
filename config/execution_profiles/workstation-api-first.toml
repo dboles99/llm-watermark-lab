@@ -1,0 +1,57 @@
+[profile]
+id = "workstation-api-first"
+description = "Execution profile for a research workstation"
+default_target = "api-first-hybrid"
+
+[hardware]
+cpu_model = "2x Intel Xeon E5-2696 v2"
+physical_cores = 24
+logical_processors = 48
+memory_gib = 64
+gpu_model = "NVIDIA GeForce RTX 2060 SUPER"
+gpu_vram_mib = 8192
+cuda_compute_capability = "7.5"
+operating_system = "Windows 10 Pro 64-bit"
+
+[local]
+required_for = [
+  "deterministic detection",
+  "tokenization and normalization",
+  "corpus ingestion and hashing",
+  "statistical simulation and calibration",
+  "CPU reference and author-code parity",
+  "notebook-small fixtures",
+  "TEE client, verifier, and development simulator",
+]
+conditional_for = [
+  "quantized small-model inference after an explicit memory preflight",
+  "small pilot attack batches",
+]
+prohibited_claims = [
+  "local execution is equivalent to the API model",
+  "an 8 GiB GPU is sufficient for the confirmatory adaptive-attack program",
+  "the local TEE simulator supplies hardware attestation",
+]
+
+[api]
+required_for = [
+  "primary large-model generation",
+  "large or repeated adaptive-attack sweeps",
+  "model-diverse robustness evaluation",
+  "remote confidential-compute attestation",
+]
+fallback_policy = "Fail explicitly if an API-required workload has no authorized endpoint; never silently substitute a smaller local model."
+
+[scheduling]
+cpu_workers_default = 20
+cpu_workers_max = 24
+reserve_logical_processors_for_desktop = 8
+gpu_concurrency_default = 1
+require_memory_preflight = true
+record_peak_ram_vram = true
+
+[secrets]
+endpoint_source = "environment"
+credential_source = "Windows Credential Manager, managed identity, or approved secret store"
+store_credentials_in_profile = false
+

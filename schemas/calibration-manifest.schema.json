@@ -1,0 +1,611 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llm-watermark-lab.example/schemas/calibration-manifest-v1.json",
+  "title": "LLM Watermark Lab Calibration Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "calibration_id",
+    "status",
+    "method",
+    "tokenizer",
+    "locale",
+    "locale_fallback_order",
+    "partitions",
+    "sampling",
+    "scoring",
+    "inference",
+    "created_at"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "calibration_id": {
+      "type": "string",
+      "pattern": "^cal_[a-zA-Z0-9_-]{8,}$"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "frozen",
+        "validated",
+        "retired"
+      ]
+    },
+    "method": {
+      "type": "object",
+      "required": [
+        "method_id",
+        "implementation_id",
+        "implementation_sha256",
+        "author_repository_url",
+        "author_commit",
+        "parity_status"
+      ],
+      "properties": {
+        "method_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "implementation_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "implementation_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "author_repository_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "author_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "parity_status": {
+          "enum": [
+            "not-run",
+            "passed",
+            "failed"
+          ]
+        },
+        "parity_report_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "parity_status": {
+                "const": "passed"
+              }
+            },
+            "required": [
+              "parity_status"
+            ]
+          },
+          "then": {
+            "required": [
+              "parity_report_sha256"
+            ]
+          }
+        }
+      ],
+      "additionalProperties": false
+    },
+    "tokenizer": {
+      "type": "object",
+      "required": [
+        "tokenizer_id",
+        "revision",
+        "asset_sha256",
+        "normalization",
+        "bos_policy",
+        "eos_policy",
+        "special_token_policy"
+      ],
+      "properties": {
+        "tokenizer_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "asset_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "normalization": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bos_policy": {
+          "enum": [
+            "include",
+            "exclude",
+            "tokenizer-native"
+          ]
+        },
+        "eos_policy": {
+          "enum": [
+            "include",
+            "exclude",
+            "tokenizer-native"
+          ]
+        },
+        "special_token_policy": {
+          "enum": [
+            "include",
+            "exclude",
+            "tokenizer-native"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "locale": {
+      "enum": [
+        "en",
+        "zh-Hant-TW"
+      ]
+    },
+    "locale_fallback_order": {
+      "const": [
+        "zh-Hant-TW",
+        "zh-TW",
+        "zh-Hant",
+        "en"
+      ]
+    },
+    "partitions": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "role",
+          "partition_id",
+          "manifest_sha256"
+        ],
+        "properties": {
+          "role": {
+            "enum": [
+              "development",
+              "calibration",
+              "attack-tuning",
+              "final-locked"
+            ]
+          },
+          "partition_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "manifest_sha256": {
+            "$ref": "#/$defs/sha256"
+          }
+        },
+        "additionalProperties": false
+      },
+      "allOf": [
+        {
+          "contains": {
+            "properties": {
+              "role": {
+                "const": "development"
+              }
+            },
+            "required": [
+              "role"
+            ]
+          }
+        },
+        {
+          "contains": {
+            "properties": {
+              "role": {
+                "const": "calibration"
+              }
+            },
+            "required": [
+              "role"
+            ]
+          }
+        },
+        {
+          "contains": {
+            "properties": {
+              "role": {
+                "const": "attack-tuning"
+              }
+            },
+            "required": [
+              "role"
+            ]
+          }
+        },
+        {
+          "contains": {
+            "properties": {
+              "role": {
+                "const": "final-locked"
+              }
+            },
+            "required": [
+              "role"
+            ]
+          }
+        }
+      ]
+    },
+    "sampling": {
+      "type": "object",
+      "required": [
+        "independent_unit",
+        "planned_independent_negatives",
+        "planned_independent_positives",
+        "cluster_fields",
+        "stopping_rule"
+      ],
+      "properties": {
+        "independent_unit": {
+          "enum": [
+            "author",
+            "document",
+            "author-document-cluster"
+          ]
+        },
+        "planned_independent_negatives": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "planned_independent_positives": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "cluster_fields": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "author_id",
+              "document_id",
+              "source_id"
+            ]
+          }
+        },
+        "stopping_rule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exclusion_policy_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "additionalProperties": false
+    },
+    "scoring": {
+      "type": "object",
+      "required": [
+        "gamma",
+        "context_width",
+        "seeding_scheme",
+        "repeated_ngram_policy",
+        "minimum_scored_tokens",
+        "decision_threshold"
+      ],
+      "properties": {
+        "gamma": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "exclusiveMaximum": 1
+        },
+        "context_width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "seeding_scheme": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repeated_ngram_policy": {
+          "enum": [
+            "score-all",
+            "first-full-ngram-only"
+          ]
+        },
+        "minimum_scored_tokens": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "decision_threshold": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "inference": {
+      "type": "object",
+      "required": [
+        "target_fpr",
+        "confidence_level",
+        "false_positive_interval",
+        "true_positive_interval",
+        "claim_basis",
+        "multiplicity_family_id",
+        "multiplicity_policy"
+      ],
+      "properties": {
+        "target_fpr": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "exclusiveMaximum": 1
+        },
+        "confidence_level": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "exclusiveMaximum": 1
+        },
+        "false_positive_interval": {
+          "const": "clopper-pearson-exact-one-sided-upper"
+        },
+        "true_positive_interval": {
+          "enum": [
+            "clopper-pearson-exact-two-sided",
+            "wilson-two-sided"
+          ]
+        },
+        "claim_basis": {
+          "enum": [
+            "zero-event-upper-bound",
+            "estimated-rate"
+          ]
+        },
+        "multiplicity_family_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "multiplicity_policy": {
+          "enum": [
+            "single-predeclared-test",
+            "bonferroni",
+            "holm",
+            "closed-testing"
+          ]
+        },
+        "analysis_code_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "additionalProperties": false
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "frozen_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "retirement_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input_channel": {
+      "type": "object",
+      "description": "The channel the calibrated text arrives through. Absent means clean text read from a file. An OCR-derived reading is a reconstruction, not a copy, so a clean-text null does not transfer to it and an OCR reading calibrated against one would understate its false-positive rate.",
+      "required": [
+        "channel"
+      ],
+      "properties": {
+        "channel": {
+          "enum": [
+            "clean-text",
+            "ocr"
+          ]
+        },
+        "ocr": {
+          "type": "object",
+          "required": [
+            "engine_id",
+            "engine_version",
+            "profile_fingerprint",
+            "language",
+            "confidence_floor",
+            "degradation"
+          ],
+          "properties": {
+            "engine_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "engine_version": {
+              "type": "string",
+              "minLength": 1
+            },
+            "profile_fingerprint": {
+              "$ref": "#/$defs/sha256"
+            },
+            "language": {
+              "type": "string",
+              "minLength": 1
+            },
+            "confidence_floor": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1
+            },
+            "degradation": {
+              "type": "object",
+              "required": [
+                "name",
+                "severity"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "severity": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "seed": {
+                  "type": "integer"
+                }
+              },
+              "additionalProperties": false
+            },
+            "render_settings_sha256": {
+              "$ref": "#/$defs/sha256"
+            },
+            "coverage_floor": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "channel": {
+                "const": "ocr"
+              }
+            },
+            "required": [
+              "channel"
+            ]
+          },
+          "then": {
+            "required": [
+              "ocr"
+            ]
+          }
+        }
+      ],
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "enum": [
+              "frozen",
+              "validated"
+            ]
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "required": [
+          "frozen_at"
+        ],
+        "properties": {
+          "method": {
+            "properties": {
+              "parity_status": {
+                "const": "passed"
+              }
+            },
+            "required": [
+              "parity_report_sha256"
+            ]
+          },
+          "sampling": {
+            "required": [
+              "exclusion_policy_sha256"
+            ]
+          },
+          "inference": {
+            "required": [
+              "analysis_code_sha256"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "inference": {
+            "properties": {
+              "target_fpr": {
+                "maximum": 0.001
+              },
+              "confidence_level": {
+                "minimum": 0.95
+              },
+              "claim_basis": {
+                "const": "zero-event-upper-bound"
+              }
+            },
+            "required": [
+              "target_fpr",
+              "confidence_level",
+              "claim_basis"
+            ]
+          }
+        },
+        "required": [
+          "inference"
+        ]
+      },
+      "then": {
+        "properties": {
+          "sampling": {
+            "properties": {
+              "planned_independent_negatives": {
+                "minimum": 2995
+              }
+            },
+            "required": [
+              "planned_independent_negatives"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "retired"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "required": [
+          "retirement_reason"
+        ]
+      }
+    }
+  ],
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  },
+  "additionalProperties": false
+}

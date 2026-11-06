@@ -1,0 +1,370 @@
+{
+  "artifact_type": "ocr-locale-comparison",
+  "generated_at": "2026-08-31",
+  "promotion_status": "NON-PROMOTABLE. Synthetic corpora on both arms, one degradation level, one engine, and a descriptive margin rather than a hypothesis test.",
+  "engine": {
+    "engine_id": "rapidocr",
+    "engine_version": "1.2.3",
+    "language": "auto",
+    "assets": [
+      {
+        "name": "models/ch_PP-OCRv3_det_infer.onnx",
+        "sha256": "3439588c030faea393a54515f51e983d8e155b19a2e8aba7891934c1cf0de526",
+        "size_bytes": 2432880
+      },
+      {
+        "name": "models/ch_PP-OCRv3_rec_infer.onnx",
+        "sha256": "897a3ededb38fee0dae2c1ccee38241f37df202c9509e3abca02e9217c5ee615",
+        "size_bytes": 10690752
+      },
+      {
+        "name": "models/ch_ppocr_mobile_v2.0_cls_infer.onnx",
+        "sha256": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c",
+        "size_bytes": 585532
+      }
+    ],
+    "aggregate_sha256": "5ea1eee20e6c6a137fd5c6d101990d059ad23cdbb88bf91d275b7d115328997f",
+    "parameters": {}
+  },
+  "degradation": {
+    "name": "clean",
+    "severity": 0.0,
+    "seed": 0
+  },
+  "tokenizer": {
+    "tokenizer_id": "openai-community/gpt2",
+    "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e"
+  },
+  "summaries": {
+    "en": {
+      "locale": "en",
+      "readings": 12,
+      "usable_readings": 11,
+      "dropped_readings": 1,
+      "median_character_error_rate": 0.011185682326621925,
+      "median_token_error_rate": 0.15384615384615385,
+      "median_token_to_character_ratio": 12.0,
+      "tokens_per_character": 0.16835147744945567,
+      "contamination_introduced_count": 0
+    },
+    "zh-Hant-TW": {
+      "locale": "zh-Hant-TW",
+      "readings": 12,
+      "usable_readings": 12,
+      "dropped_readings": 0,
+      "median_character_error_rate": 0.21055511851421144,
+      "median_token_error_rate": 0.18764873244300312,
+      "median_token_to_character_ratio": 0.9188350390579998,
+      "tokens_per_character": 2.0953072085147557,
+      "contamination_introduced_count": 6
+    }
+  },
+  "readings": {
+    "en": [
+      {
+        "locale": "en",
+        "reference_chars": 484,
+        "reference_tokens": 81,
+        "character_error_rate": 0.008264462809917356,
+        "token_error_rate": 0.13580246913580246,
+        "token_to_character_ratio": 16.432098765432098,
+        "coverage_ratio": 1.0,
+        "dropped": false,
+        "contamination_verdict": null,
+        "contamination_introduced": false
+      },
+      {
+        "locale": "en",
+        "reference_chars": 447,
+        "reference_tokens": 78,
+        "character_error_rate": 0.011185682326621925,
+        "token_error_rate": 0.15384615384615385,
+        "token_to_character_ratio": 13.753846153846155,
+        "coverage_ratio": 0.9977628635346756,
+        "dropped": false,
+        "contamination_verdict": null,
+        "contamination_introduced": false
+      },
+      {
+        "locale": "en",
+        "reference_chars": 479,
+        "reference_tokens": 80,
+        "character_error_rate": 0.22129436325678498,
+        "token_error_rate": 0.3125,
+        "token_to_character_ratio": 1.4121462264150944,
+        "coverage_ratio": 0.7849686847599165,
+        "dropped": false,
+        "contamination_verdict": null,
+        "contamination_introduced": false
+      },
+      {
+        "locale": "en",
+        "reference_chars": 464,
+        "reference_tokens": 79,
+        "character_error_rate": 0.2349137931034483,
+        "token_error_rate": 0.31645569620253167,
+        "token_to_character_ratio": 1.3471141563116944,
+        "coverage_ratio": 0.771551724137931,
+        "dropped": false,
+        "contamination_verdict": null,
+        "contamination_introduced": false
+      },
+      {
+        "locale": "en",
+        "reference_chars": 484,
+        "reference_tokens": 81,
+        "character_error_rate": 0.4524793388429752,
+        "token_error_rate": 0.5185185185185185,
+        "token_to_character_ratio": 1.145949602570607,
+        "coverage_ratio": 0.5516528925619835,
+        "dropped": false,
+        "contamination_verdict": null,
+        "contamination_introduced": false
+      },
+      {
+        "locale": "en",
+        "reference_chars": 456,
+        "reference_tokens": 76,
+        "character_error_rate": 0.008771929824561403,
+        "token_error_rate": 0.10526315789473684,
+        "token_to_character_ratio": 12.0,
+        "coverage_ratio": 1.0,
+        "dropped": false,
+        "contamination_verdict": null,
+        "contamination_introduced": false
+      },
+      {
+        "locale": "en",
+        "reference_chars": 456,
+        "reference_tokens": 77,
+        "character_error_rate": 0.48026315789473684,
+        "token_error_rate": 0.5064935064935064,
+        "token_to_character_ratio": 1.0546166162604518,
+        "coverage_ratio": 0.5241228070175439,
+        "dropped": false,
+        "contamination_verdict": null,
+        "contamination_introduced": false
+      },
+      {
+        "locale": "en",
+        "reference_chars": 449,
+        "reference_tokens": 75,
+        "character_error_rate": 0.24721603563474387,
+        "token_error_rate": 0.3466666666666667,
+        "token_to_character_ratio": 1.4022822822822825,
+        "coverage_ratio": 0.7594654788418709,
+        "dropped": false,
+        "contamination_verdict": null,
+        "contamination_introduced": false
+      },
+      {
+        "locale": "en",
+        "reference_chars": 479,
+        "reference_tokens": 79,
+        "character_error_rate": 0.008350730688935281,
+        "token_error_rate": 0.11392405063291139,
+        "token_to_character_ratio": 13.64240506329114,
+        "coverage_ratio": 1.0,
+        "dropped": false,
+        "contamination_verdict": null,
+        "contamination_introduced": false
+      },
+      {
+        "locale": "en",
+        "reference_chars": 472,
+        "reference_tokens": 80,
+        "character_error_rate": 0.00847457627118644,
+        "token_error_rate": 0.125,
+        "token_to_character_ratio": 14.75,
+        "coverage_ratio": 1.0,
+        "dropped": false,
+        "contamination_verdict": null,
+        "contamination_introduced": false
+      },
+      {
+        "locale": "en",
+        "reference_chars": 452,
+        "reference_tokens": 77,
+        "character_error_rate": 0.7345132743362832,
+        "token_error_rate": 0.7402597402597403,
+        "token_to_character_ratio": 1.0078235017994055,
+        "coverage_ratio": 0.2676991150442478,
+        "dropped": true,
+        "contamination_verdict": null,
+        "contamination_introduced": false
+      },
+      {
+        "locale": "en",
+        "reference_chars": 474,
+        "reference_tokens": 80,
+        "character_error_rate": 0.008438818565400843,
+        "token_error_rate": 0.1125,
+        "token_to_character_ratio": 13.33125,
+        "coverage_ratio": 1.0,
+        "dropped": false,
+        "contamination_verdict": null,
+        "contamination_introduced": false
+      }
+    ],
+    "zh-Hant-TW": [
+      {
+        "locale": "zh-Hant-TW",
+        "reference_chars": 181,
+        "reference_tokens": 385,
+        "character_error_rate": 0.4530386740331492,
+        "token_error_rate": 0.4155844155844156,
+        "token_to_character_ratio": 0.9173265758631612,
+        "coverage_ratio": 0.6629834254143646,
+        "dropped": false,
+        "contamination_verdict": "insufficient-evidence",
+        "contamination_introduced": true
+      },
+      {
+        "locale": "zh-Hant-TW",
+        "reference_chars": 178,
+        "reference_tokens": 370,
+        "character_error_rate": 0.21910112359550563,
+        "token_error_rate": 0.1810810810810811,
+        "token_to_character_ratio": 0.8264726264726265,
+        "coverage_ratio": 0.9382022471910112,
+        "dropped": false,
+        "contamination_verdict": "insufficient-evidence",
+        "contamination_introduced": false
+      },
+      {
+        "locale": "zh-Hant-TW",
+        "reference_chars": 174,
+        "reference_tokens": 370,
+        "character_error_rate": 0.22988505747126436,
+        "token_error_rate": 0.21891891891891893,
+        "token_to_character_ratio": 0.9522972972972974,
+        "coverage_ratio": 0.9195402298850575,
+        "dropped": false,
+        "contamination_verdict": "insufficient-evidence",
+        "contamination_introduced": false
+      },
+      {
+        "locale": "zh-Hant-TW",
+        "reference_chars": 167,
+        "reference_tokens": 356,
+        "character_error_rate": 0.18562874251497005,
+        "token_error_rate": 0.16292134831460675,
+        "token_to_character_ratio": 0.8776730699528815,
+        "coverage_ratio": 0.9461077844311377,
+        "dropped": false,
+        "contamination_verdict": "insufficient-evidence",
+        "contamination_introduced": true
+      },
+      {
+        "locale": "zh-Hant-TW",
+        "reference_chars": 179,
+        "reference_tokens": 369,
+        "character_error_rate": 0.22346368715083798,
+        "token_error_rate": 0.1897018970189702,
+        "token_to_character_ratio": 0.8489159891598916,
+        "coverage_ratio": 0.9162011173184358,
+        "dropped": false,
+        "contamination_verdict": "insufficient-evidence",
+        "contamination_introduced": false
+      },
+      {
+        "locale": "zh-Hant-TW",
+        "reference_chars": 169,
+        "reference_tokens": 347,
+        "character_error_rate": 0.21301775147928995,
+        "token_error_rate": 0.1844380403458213,
+        "token_to_character_ratio": 0.8658341338456611,
+        "coverage_ratio": 0.9289940828402367,
+        "dropped": false,
+        "contamination_verdict": "insufficient-evidence",
+        "contamination_introduced": false
+      },
+      {
+        "locale": "zh-Hant-TW",
+        "reference_chars": 169,
+        "reference_tokens": 359,
+        "character_error_rate": 0.1834319526627219,
+        "token_error_rate": 0.17827298050139276,
+        "token_to_character_ratio": 0.9718752807979154,
+        "coverage_ratio": 0.9289940828402367,
+        "dropped": false,
+        "contamination_verdict": "insufficient-evidence",
+        "contamination_introduced": false
+      },
+      {
+        "locale": "zh-Hant-TW",
+        "reference_chars": 173,
+        "reference_tokens": 363,
+        "character_error_rate": 0.20809248554913296,
+        "token_error_rate": 0.19834710743801653,
+        "token_to_character_ratio": 0.953168044077135,
+        "coverage_ratio": 0.9132947976878613,
+        "dropped": false,
+        "contamination_verdict": "insufficient-evidence",
+        "contamination_introduced": true
+      },
+      {
+        "locale": "zh-Hant-TW",
+        "reference_chars": 178,
+        "reference_tokens": 361,
+        "character_error_rate": 0.20224719101123595,
+        "token_error_rate": 0.18559556786703602,
+        "token_to_character_ratio": 0.9176669744536781,
+        "coverage_ratio": 0.9213483146067416,
+        "dropped": false,
+        "contamination_verdict": "insufficient-evidence",
+        "contamination_introduced": true
+      },
+      {
+        "locale": "zh-Hant-TW",
+        "reference_chars": 167,
+        "reference_tokens": 358,
+        "character_error_rate": 0.2155688622754491,
+        "token_error_rate": 0.19832402234636873,
+        "token_to_character_ratio": 0.9200031036623215,
+        "coverage_ratio": 0.9221556886227545,
+        "dropped": false,
+        "contamination_verdict": "insufficient-evidence",
+        "contamination_introduced": true
+      },
+      {
+        "locale": "zh-Hant-TW",
+        "reference_chars": 161,
+        "reference_tokens": 340,
+        "character_error_rate": 0.18633540372670807,
+        "token_error_rate": 0.17352941176470588,
+        "token_to_character_ratio": 0.9312745098039216,
+        "coverage_ratio": 0.9254658385093167,
+        "dropped": false,
+        "contamination_verdict": "insufficient-evidence",
+        "contamination_introduced": true
+      },
+      {
+        "locale": "zh-Hant-TW",
+        "reference_chars": 171,
+        "reference_tokens": 353,
+        "character_error_rate": 0.19298245614035087,
+        "token_error_rate": 0.19263456090651557,
+        "token_to_character_ratio": 0.9981972701519444,
+        "coverage_ratio": 0.9239766081871345,
+        "dropped": false,
+        "contamination_verdict": "insufficient-evidence",
+        "contamination_introduced": false
+      }
+    ]
+  },
+  "verdict": {
+    "verdict": "supported",
+    "median_token_to_character_ratio": {
+      "en": 12.0,
+      "zh-Hant-TW": 0.9188350390579998
+    },
+    "relative_difference": 12.06001566102936,
+    "margin": 0.25,
+    "detail": "token damage per character error differs by 1206% across locales, above the 25% margin; a single OCR-robustness figure does not transfer across locales and per-locale calibration is required",
+    "contamination_introduced": {
+      "en": 0,
+      "zh-Hant-TW": 6
+    }
+  }
+}
