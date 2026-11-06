@@ -1,5 +1,7 @@
 # LLM Watermark Lab
 
+**[Read the wiki](https://github.com/dboles99/llm-watermark-lab/wiki)** for how it works, the evidence, the design decisions and the limits.
+
 Designed and authored by Daniel Boles; implemented with coding agents.
 
 A research lab for measuring and detecting statistical watermarks in text produced by large
